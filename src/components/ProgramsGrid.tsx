@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { GraduationCap, Award, Globe, Heart, ArrowRight, Droplets, HeartHandshake, Zap } from 'lucide-react';
+import { GraduationCap, Award, Heart, ArrowRight, Droplets, HeartHandshake, Zap } from 'lucide-react';
 import FadeIn from './FadeIn';
 import { motion } from 'framer-motion';
 

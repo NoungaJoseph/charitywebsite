@@ -78,13 +78,8 @@ const filters: { key: FilterKey; label: string; color: string; icon: React.React
     { key: 'emergency', label: 'Emergency Relief', color: '#ea580c', icon: <AlertTriangle className="w-3.5 h-3.5" /> },
 ];
 
-/* ─── Helper: interpolate color with intensity ─── */
-function hexToRgb(hex: string) {
-    const r = parseInt(hex.slice(1, 3), 16);
-    const g = parseInt(hex.slice(3, 5), 16);
-    const b = parseInt(hex.slice(5, 7), 16);
-    return `rgb(${r},${g},${b})`;
-}
+
+
 
 const CameroonMap = () => {
     const [activeFilter, setActiveFilter] = useState<FilterKey>('all');
