@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Leaf, Instagram, Linkedin, Twitter, Youtube, Facebook, ArrowUpRight, Phone, Mail, MapPin, Heart } from 'lucide-react';
+import { Instagram, Linkedin, Twitter, Youtube, Facebook, ArrowUpRight, Phone, Mail, MapPin, Heart } from 'lucide-react';
 
 const Footer = () => {
     const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -14,14 +14,8 @@ const Footer = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-white/10">
                     {/* Brand column */}
                     <div className="lg:col-span-4 space-y-8">
-                        <div className="flex items-center gap-3 group cursor-pointer" onClick={scrollToTop}>
-                            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-green-600 text-white group-hover:rotate-12 transition-transform">
-                                <Leaf className="w-6 h-6" />
-                            </div>
-                            <div>
-                                <h2 className="text-xl font-black tracking-tight text-white uppercase">Enako Outreach</h2>
-                                <span className="text-green-400 text-[10px] font-bold uppercase tracking-[0.2em]">Cameroon NGO</span>
-                            </div>
+                        <div className="flex items-center group cursor-pointer" onClick={scrollToTop}>
+                            <img src="/assets/images/outreach-removebg-preview.png" alt="Enako Outreach" className="h-42 w-auto object-contain group-hover:scale-105 transition-transform" />
                         </div>
                         <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
                             A humanitarian NGO dedicated to transforming communities across Cameroon through education, healthcare, clean water, and social empowerment.

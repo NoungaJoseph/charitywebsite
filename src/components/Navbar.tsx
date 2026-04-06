@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-    ChevronDown, Menu, X, Heart, Globe, Award, Users, BookOpen,
-    GraduationCap, Droplets, Phone, Mail, Facebook, Twitter,
-    Instagram, Linkedin, Youtube, Leaf, HeartHandshake, Zap
+    ChevronDown, Menu, X, Heart, Phone, Mail, Facebook, Twitter,
+    Instagram, Linkedin, Youtube, GraduationCap, Award, Users,
+    Droplets, Stethoscope, HandHeart, Newspaper, BookOpen, Archive
 } from 'lucide-react';
 
 /* ─── Language Switcher state ─── */
@@ -24,7 +24,7 @@ const navLinks = [
                     {
                         name: 'Scholarships',
                         href: '/programs/scholarships',
-                        icon: <GraduationCap className="w-4 h-4" />,
+                        icon: <GraduationCap className="w-8 h-8" />,
                         desc: 'Primary, Secondary & University',
                         sub: [
                             { name: 'Primary School Support', href: '/programs/scholarships-primary' },
@@ -35,13 +35,13 @@ const navLinks = [
                     {
                         name: 'Teacher Rewards',
                         href: '/programs/teacher-rewards',
-                        icon: <Award className="w-4 h-4" />,
+                        icon: <Award className="w-8 h-8" />,
                         desc: 'Honouring dedicated educators',
                     },
                     {
                         name: 'Youth Empowerment',
                         href: '/programs/youth-empowerment',
-                        icon: <Zap className="w-4 h-4" />,
+                        icon: <Users className="w-8 h-8" />,
                         desc: 'Skills & leadership for youth',
                     },
                 ],
@@ -52,19 +52,19 @@ const navLinks = [
                     {
                         name: 'Clean Water Initiative',
                         href: '/programs/clean-water-initiative',
-                        icon: <Droplets className="w-4 h-4" />,
+                        icon: <Droplets className="w-8 h-8" />,
                         desc: 'Safe water for every family',
                     },
                     {
                         name: 'Community Health Support',
                         href: '/programs/community-health-support',
-                        icon: <Heart className="w-4 h-4" />,
+                        icon: <Stethoscope className="w-8 h-8" />,
                         desc: 'Healthcare & medical outreach',
                     },
                     {
                         name: 'Single Mothers Assistance',
                         href: '/programs/single-mothers-assistance',
-                        icon: <HeartHandshake className="w-4 h-4" />,
+                        icon: <HandHeart className="w-8 h-8" />,
                         desc: 'Support for women & families',
                     },
                 ],
@@ -80,9 +80,9 @@ const navLinks = [
             {
                 title: 'Articles',
                 items: [
-                    { name: 'Latest News', href: '/blog/latest-news', icon: <BookOpen className="w-4 h-4" />, desc: 'Breaking stories & updates' },
-                    { name: 'Blog Posts', href: '/blog/posts', icon: <Globe className="w-4 h-4" />, desc: 'Insights & community stories' },
-                    { name: 'Archives', href: '/blog/archives', icon: <Users className="w-4 h-4" />, desc: 'Past articles & resources' },
+                    { name: 'Latest News', href: '/blog/latest-news', icon: <Newspaper className="w-8 h-8" />, desc: 'Breaking stories & updates' },
+                    { name: 'Blog Posts', href: '/blog/posts', icon: <BookOpen className="w-8 h-8" />, desc: 'Insights & community stories' },
+                    { name: 'Archives', href: '/blog/archives', icon: <Archive className="w-8 h-8" />, desc: 'Past articles & resources' },
                 ],
             },
         ],
@@ -126,6 +126,7 @@ const Navbar = () => {
 
     const isHome = location.pathname === '/';
     const isTransparent = isHome && !isScrolled && !isMobileMenuOpen;
+    const navbarFontStyle = { fontFamily: '"Inter", sans-serif' };
 
     return (
         <>
@@ -177,22 +178,12 @@ const Navbar = () => {
                 <header className={`transition-all duration-500 ${isTransparent
                     ? 'bg-transparent py-4'
                     : 'bg-white/98 backdrop-blur-xl border-b border-slate-100 py-0'
-                    }`}>
+                    }`} style={navbarFontStyle}>
                     <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between" style={{ minHeight: isTransparent ? 'auto' : '80px' }}>
 
                         {/* Logo */}
-                        <Link to="/" className="flex items-center gap-3 group flex-shrink-0">
-                            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-green-600 text-white shadow-lg shadow-green-600/30 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                                <Leaf className="w-6 h-6" />
-                            </div>
-                            <div>
-                                <h2 className={`text-lg font-black tracking-tight leading-none transition-colors duration-300 ${isTransparent ? 'text-white' : 'text-slate-900'}`}>
-                                    Enako
-                                </h2>
-                                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-green-500">
-                                    Outreach
-                                </span>
-                            </div>
+                        <Link to="/" className="flex items-center group flex-shrink-0">
+                            <img src="/assets/images/outreach-removebg-preview.png" alt="Enako Outreach" className="h-20 w-auto object-contain group-hover:scale-105 transition-all duration-500" />
                         </Link>
 
                         {/* Desktop Nav */}
@@ -249,7 +240,7 @@ const Navbar = () => {
                                                                                 to={sub.href}
                                                                                 className="group flex items-start gap-3 p-2.5 rounded-xl hover:bg-green-50 transition-all"
                                                                             >
-                                                                                <div className="w-8 h-8 rounded-lg bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-green-600 group-hover:text-white transition-all flex-shrink-0">
+                                                                                <div className="flex items-center justify-center text-slate-400 group-hover:text-green-700 transition-all flex-shrink-0">
                                                                                     {sub.icon}
                                                                                 </div>
                                                                                 <div className="flex-1">
@@ -357,17 +348,12 @@ const Navbar = () => {
                             exit={{ x: '100%' }}
                             transition={{ type: 'spring', damping: 28, stiffness: 220 }}
                             className="fixed right-0 top-0 bottom-0 w-[88%] max-w-sm bg-white z-[60] flex flex-col shadow-2xl"
+                            style={navbarFontStyle}
                         >
                             {/* Panel Header */}
                             <div className="flex items-center justify-between px-6 py-5 border-b border-slate-100 bg-green-600">
-                                <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-3">
-                                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/20 text-white">
-                                        <Leaf className="w-5 h-5" />
-                                    </div>
-                                    <div>
-                                        <span className="text-white font-black text-base block leading-none">Enako</span>
-                                        <span className="text-green-200 text-[10px] font-bold uppercase tracking-widest">Outreach</span>
-                                    </div>
+                                <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center">
+                                    <img src="/assets/images/outreach-removebg-preview.png" alt="Enako Outreach" className="h-16 w-auto object-contain" />
                                 </Link>
                                 <button
                                     onClick={() => setIsMobileMenuOpen(false)}
@@ -419,7 +405,7 @@ const Navbar = () => {
                                                                                         className="flex items-center gap-2.5 py-2 px-3 rounded-lg hover:bg-white transition-colors"
                                                                                         onClick={() => setIsMobileMenuOpen(false)}
                                                                                     >
-                                                                                        <div className="w-7 h-7 rounded-lg bg-white shadow-sm flex items-center justify-center text-green-600 flex-shrink-0">
+                                                                                        <div className="flex items-center justify-center text-green-600 flex-shrink-0">
                                                                                             {sub.icon}
                                                                                         </div>
                                                                                         <span className="text-slate-700 font-semibold text-sm">{sub.name}</span>
