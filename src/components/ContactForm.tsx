@@ -20,13 +20,13 @@ const ContactForm = () => {
                         </div>
                     </div>
 
-                    <form className="space-y-6 bg-slate-50 dark:bg-slate-900 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 dark:border-slate-800 shadow-2xl">
+                    <form className="space-y-6 p-8 md:p-12 rounded-[2.5rem]">
                         <div className="space-y-2">
                             <label className="text-sm font-bold text-navy dark:text-white uppercase tracking-wider pl-1 font-display">Your Name</label>
                             <input
                                 type="text"
                                 placeholder="FullName"
-                                className="w-full px-6 py-4 rounded-xl bg-white dark:bg-slate-800 border-none focus:ring-2 focus:ring-primary text-navy dark:text-white transition-all shadow-sm"
+                                className="w-full px-6 py-4 rounded-xl bg-white dark:bg-slate-800 border-none focus:ring-2 focus:ring-primary text-navy dark:text-white transition-all"
                             />
                         </div>
                         <div className="space-y-2">
@@ -34,7 +34,7 @@ const ContactForm = () => {
                             <input
                                 type="email"
                                 placeholder="hello@company.com"
-                                className="w-full px-6 py-4 rounded-xl bg-white dark:bg-slate-800 border-none focus:ring-2 focus:ring-primary text-navy dark:text-white transition-all shadow-sm"
+                                className="w-full px-6 py-4 rounded-xl bg-white dark:bg-slate-800 border-none focus:ring-2 focus:ring-primary text-navy dark:text-white transition-all"
                             />
                         </div>
                         <div className="space-y-2">
@@ -42,10 +42,10 @@ const ContactForm = () => {
                             <textarea
                                 rows={4}
                                 placeholder="How can we help?"
-                                className="w-full px-6 py-4 rounded-xl bg-white dark:bg-slate-800 border-none focus:ring-2 focus:ring-primary text-navy dark:text-white transition-all shadow-sm resize-none"
+                                className="w-full px-6 py-4 rounded-xl bg-white dark:bg-slate-800 border-none focus:ring-2 focus:ring-primary text-navy dark:text-white transition-all resize-none"
                             ></textarea>
                         </div>
-                        <button className="w-full py-5 bg-primary text-white font-black rounded-xl text-lg hover:brightness-110 active:scale-95 transition-all shadow-xl shadow-primary/20">
+                        <button className="w-full py-5 bg-primary text-white font-black rounded-xl text-lg hover:brightness-110 active:scale-95 transition-all">
                             Send Message
                         </button>
                     </form>

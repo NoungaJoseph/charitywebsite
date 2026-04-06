@@ -167,7 +167,7 @@ const BlogArchives = () => {
                     {/* Browse All CTA */}
                     <FadeIn direction="up" className="mt-12 text-center">
                         <p className="text-slate-500 text-sm mb-4">Looking for all blog posts?</p>
-                        <Link to="/blog/posts" className="inline-flex items-center gap-2 bg-green-600 text-white font-bold px-8 py-4 rounded-xl hover:bg-green-700 transition-colors shadow-lg shadow-green-600/20">
+                        <Link to="/blog/posts" className="inline-flex items-center gap-2 bg-green-600 text-white font-bold px-8 py-4 rounded-xl hover:bg-green-700 transition-colors">
                             Browse All Blog Posts
                         </Link>
                     </FadeIn>

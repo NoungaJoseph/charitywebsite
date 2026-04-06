@@ -90,7 +90,7 @@ const CameroonMap = () => {
     return (
         <div className="w-full">
             {/* ── Map Container ── */}
-            <div className="relative bg-gradient-to-br from-green-50 via-slate-50 to-teal-50 rounded-3xl overflow-hidden border border-green-100 shadow-xl">
+            <div className="relative bg-gradient-to-br from-green-50 via-slate-50 to-teal-50 rounded-3xl overflow-hidden">
                 <svg
                     viewBox="0 0 380 500"
                     className="w-full max-h-[520px]"
@@ -292,7 +292,7 @@ const CameroonMap = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 20 }}
                         transition={{ duration: 0.3 }}
-                        className="mt-4 bg-white rounded-2xl border border-green-100 shadow-xl p-6 relative"
+                        className="mt-4 rounded-2xl p-6 relative"
                     >
                         <button
                             onClick={() => setSelectedRegion(null)}
@@ -331,13 +331,12 @@ const CameroonMap = () => {
                             onClick={() => setActiveFilter(f.key)}
                             whileTap={{ scale: 0.95 }}
                             className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all duration-300 border ${activeFilter === f.key
-                                ? 'text-white shadow-lg'
-                                : 'bg-white text-slate-600 border-slate-200 hover:border-slate-300 hover:bg-slate-50'
+                                ? 'text-white'
+                                : 'text-slate-600 hover:bg-slate-50'
                                 }`}
                             style={activeFilter === f.key ? {
                                 backgroundColor: f.color,
-                                borderColor: f.color,
-                                boxShadow: `0 8px 20px ${f.color}40`,
+                                borderColor: f.color
                             } : {}}
                         >
                             {f.icon}

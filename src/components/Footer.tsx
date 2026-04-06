@@ -15,7 +15,7 @@ const Footer = () => {
                     {/* Brand column */}
                     <div className="lg:col-span-4 space-y-8">
                         <div className="flex items-center gap-3 group cursor-pointer" onClick={scrollToTop}>
-                            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-green-600 text-white shadow-xl shadow-green-600/20 group-hover:rotate-12 transition-transform">
+                            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-green-600 text-white group-hover:rotate-12 transition-transform">
                                 <Leaf className="w-6 h-6" />
                             </div>
                             <div>
@@ -160,7 +160,7 @@ const Footer = () => {
                         <h3 className="text-white font-black text-xl mb-1">Transform a Life Today</h3>
                         <p className="text-green-100 text-sm">Your donation directly funds education, healthcare, and clean water for families in Cameroon.</p>
                     </div>
-                    <Link to="/donate" className="flex items-center gap-2 bg-white text-green-700 font-bold px-8 py-3 rounded-xl hover:bg-green-50 transition-colors whitespace-nowrap shadow-lg">
+                    <Link to="/donate" className="flex items-center gap-2 bg-white text-green-700 font-bold px-8 py-3 rounded-xl hover:bg-green-50 transition-colors whitespace-nowrap">
                         <Heart className="w-4 h-4" />
                         Donate Now
                     </Link>

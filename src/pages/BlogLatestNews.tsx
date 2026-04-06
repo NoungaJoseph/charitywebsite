@@ -123,7 +123,7 @@ const BlogLatestNews = () => {
                                 <motion.article
                                     key={post.id}
                                     whileHover={{ y: -4 }}
-                                    className="lg:col-span-2 group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-xl hover:shadow-2xl transition-all duration-500"
+                                    className="lg:col-span-2 group rounded-3xl overflow-hidden transition-all duration-500"
                                 >
                                     <div className="grid md:grid-cols-2">
                                         <div className="relative h-72 md:h-full overflow-hidden">
@@ -160,7 +160,7 @@ const BlogLatestNews = () => {
                             <FadeIn key={post.id} direction="up" delay={i * 0.07}>
                                 <motion.article
                                     whileHover={{ y: -4 }}
-                                    className="group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col h-full"
+                                    className="group rounded-2xl overflow-hidden transition-all duration-500 flex flex-col h-full"
                                 >
                                     <div className="relative h-48 overflow-hidden">
                                         <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />

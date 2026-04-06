@@ -141,7 +141,7 @@ const Home = () => {
                                     <div className="grid grid-cols-2 gap-4">
                                         {missionPoints.map((item, i) => (
                                             <motion.div key={i} whileHover={{ y: -3 }}
-                                                className="p-5 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-all duration-300">
+                                                className="p-5 rounded-2xl transition-all duration-300">
                                                 <div className="w-10 h-10 rounded-xl bg-green-100 text-green-600 flex items-center justify-center mb-3">
                                                     {item.icon}
                                                 </div>
@@ -166,9 +166,9 @@ const Home = () => {
                                 {ctaCards.map((card, i) => (
                                     <FadeIn key={card.title} direction="up" delay={i * 0.08}>
                                         <motion.div whileHover={{ y: -5 }} transition={{ duration: 0.3 }}>
-                                            <Link to={card.to} className={`block p-6 rounded-3xl ${card.lightColor} border border-opacity-50 hover:shadow-xl transition-all duration-400 group h-full`}
+                                            <Link to={card.to} className={`block p-6 rounded-3xl transition-all duration-400 group h-full`}
                                                 style={{ borderColor: 'transparent' }}>
-                                                <div className={`w-14 h-14 rounded-2xl ${card.color} text-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg`}>
+                                                <div className={`w-14 h-14 rounded-2xl ${card.color} text-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                                                     {card.icon}
                                                 </div>
                                                 <h3 className={`font-black text-lg ${card.textColor} mb-2`}>{card.title}</h3>
@@ -220,7 +220,7 @@ const Home = () => {
                                             </div>
                                         ))}
                                     </div>
-                                    <Link to="/focus-communities" className="inline-flex items-center gap-2 bg-green-600 text-white font-bold px-8 py-4 rounded-xl hover:bg-green-700 transition-colors shadow-lg shadow-green-600/25">
+                                    <Link to="/focus-communities" className="inline-flex items-center gap-2 bg-green-600 text-white font-bold px-8 py-4 rounded-xl hover:bg-green-700 transition-colors">
                                         Explore All Regions <ArrowRight className="w-4 h-4" />
                                     </Link>
                                 </FadeIn>
@@ -245,10 +245,10 @@ const Home = () => {
                                 {successStories.map((story, i) => (
                                     <FadeIn key={story.name} direction="up" delay={i * 0.1}>
                                         <motion.div whileHover={{ y: -4 }}
-                                            className={`rounded-3xl border p-8 transition-all duration-300 hover:shadow-xl ${story.color}`}>
+                                            className={`rounded-3xl p-8 transition-all duration-300`}>
                                             <div className="flex items-center gap-4 mb-5">
                                                 <img src={story.image} alt={story.name}
-                                                    className="w-14 h-14 rounded-2xl object-cover shadow-md" />
+                                                    className="w-14 h-14 rounded-2xl object-cover" />
                                                 <div>
                                                     <h4 className="font-black text-slate-900 text-base">{story.name}</h4>
                                                     <div className="flex items-center gap-1 text-slate-500 text-xs">
@@ -310,7 +310,7 @@ const Home = () => {
                                     ))}
                                 </div>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link to="/donate" className="flex items-center gap-2 bg-green-600 text-white font-bold px-10 py-4 rounded-xl hover:bg-green-700 transition-all shadow-2xl shadow-green-600/30 hover:scale-105 text-lg">
+                                    <Link to="/donate" className="flex items-center gap-2 bg-green-600 text-white font-bold px-10 py-4 rounded-xl hover:bg-green-700 transition-all hover:scale-105 text-lg">
                                         <Heart className="w-5 h-5" /> Donate Now
                                     </Link>
                                     <Link to="/partnership" className="flex items-center gap-2 border-2 border-white/30 text-white font-bold px-10 py-4 rounded-xl hover:bg-white/10 transition-colors text-lg">
