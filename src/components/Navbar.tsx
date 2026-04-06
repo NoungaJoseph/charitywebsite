@@ -6,9 +6,9 @@ import {
     Instagram, Linkedin, Youtube, GraduationCap, Award, Users,
     Droplets, Stethoscope, HandHeart, Newspaper, BookOpen, Archive
 } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 /* ─── Language Switcher state ─── */
-type Lang = 'EN' | 'FR';
 
 /* ─── Nav structure ─── */
 const navLinks = [
@@ -104,7 +104,7 @@ const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
     const [activeSub, setActiveSub] = useState<string | null>(null);
-    const [lang, setLang] = useState<Lang>('EN');
+    const { lang, setLang } = useLanguage();
     const location = useLocation();
 
     useEffect(() => {
@@ -160,7 +160,7 @@ const Navbar = () => {
                             </div>
                             {/* Language Switcher */}
                             <div className="flex items-center gap-0.5 bg-white/10 rounded-full p-0.5">
-                                {(['EN', 'FR'] as Lang[]).map((l) => (
+                                {(['EN', 'FR'] as const).map((l) => (
                                     <button
                                         key={l}
                                         onClick={() => setLang(l)}
@@ -456,7 +456,7 @@ const Navbar = () => {
                             <div className="p-5 border-t border-slate-100 space-y-3">
                                 <div className="flex items-center justify-center gap-2">
                                     <span className="text-xs text-slate-400 font-medium">Language:</span>
-                                    {(['EN', 'FR'] as Lang[]).map((l) => (
+                                    {(['EN', 'FR'] as const).map((l) => (
                                         <button
                                             key={l}
                                             onClick={() => setLang(l)}
@@ -483,3 +483,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

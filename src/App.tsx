@@ -17,11 +17,13 @@ import BlogArchives from './pages/BlogArchives';
 import FocusCommunities from './pages/FocusCommunities';
 import ScrollToTop from './components/ScrollToTop';
 import WhatsAppFloat from './components/WhatsAppFloat';
+import GoogleTranslateBridge from './components/GoogleTranslateBridge';
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
+      <GoogleTranslateBridge />
       <WhatsAppFloat />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -65,6 +65,23 @@ body {
     width: 100%;
 }
 
+/* Keep layout stable when Google Translate is active */
+body {
+    top: 0 !important;
+}
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+#google_translate_element {
+    position: fixed;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 /* === GLOBAL: Remove ALL italics from headings sitewide === */
 h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins", sans-serif;
