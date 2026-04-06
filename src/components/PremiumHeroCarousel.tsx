@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { School, Award, Users, Heart, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { School, Award, Users, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
     {
