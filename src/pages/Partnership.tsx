@@ -35,7 +35,7 @@ const Partnership = () => {
                             { icon: Heart, title: "NGO Alliances", desc: "Scaling impact through shared resources and ground-level expertise." }
                         ].map((type, i) => (
                             <FadeIn key={type.title} delay={i * 0.1} direction="up" fullWidth>
-                                <div className="p-12 rounded-[3.5rem] bg-white/50 backdrop-blur-sm border border-slate-100 flex flex-col gap-8 hover:bg-white hover:shadow-premium transition-all duration-700 h-full group">
+                                <div className="p-12 rounded-[3.5rem] flex flex-col gap-8 transition-all duration-700 h-full group">
                                     <div className="w-20 h-20 rounded-2xl bg-white shadow-inner flex items-center justify-center text-navy group-hover:bg-navy group-hover:text-white transition-all duration-500">
                                         <type.icon className="w-10 h-10" />
                                     </div>
@@ -60,7 +60,7 @@ const Partnership = () => {
                                     </p>
                                 </div>
                                 <div className="space-y-6">
-                                    <div className="flex items-center gap-6 p-6 bg-white rounded-3xl border border-slate-100">
+                                    <div className="flex items-center gap-6 p-6 rounded-3xl">
                                         <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
                                             <MessageSquare className="w-6 h-6" />
                                         </div>
@@ -69,7 +69,7 @@ const Partnership = () => {
                                             <p className="text-slate-500 text-sm font-medium">Strategic planning for your CSR goals.</p>
                                         </div>
                                     </div>
-                                    <div className="flex items-center gap-6 p-6 bg-white rounded-3xl border border-slate-100">
+                                    <div className="flex items-center gap-6 p-6 rounded-3xl">
                                         <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
                                             <Globe className="w-6 h-6" />
                                         </div>
@@ -80,7 +80,7 @@ const Partnership = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="lg:w-1/2 bg-white rounded-[3rem] p-12 shadow-premium border border-slate-100">
+                            <div className="lg:w-1/2 rounded-[3rem] p-12">
                                 <form className="space-y-8" onSubmit={(e) => e.preventDefault()}>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                         <div className="space-y-2">

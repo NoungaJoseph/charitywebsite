@@ -72,7 +72,7 @@ const ImpactDashboard: React.FC = () => {
                             <div className="mt-10 flex flex-wrap gap-4">
                                 <Link
                                     to="/impact"
-                                    className="px-8 py-4 bg-primary text-white font-black text-sm uppercase tracking-widest rounded-2xl hover:bg-primary/90 hover:scale-105 transition-all shadow-xl shadow-primary/30"
+                                    className="px-8 py-4 bg-primary text-white font-black text-sm uppercase tracking-widest rounded-2xl hover:bg-primary/90 hover:scale-105 transition-all"
                                 >
                                     View Full Report
                                 </Link>
@@ -93,7 +93,7 @@ const ImpactDashboard: React.FC = () => {
                             <div className="absolute bottom-0 right-0 w-48 h-48 bg-primary rounded-tl-[80px] rounded-br-[16px] z-0 translate-x-8 translate-y-8 opacity-20" />
 
                             {/* Circular image */}
-                            <div className="relative z-10 w-[340px] h-[340px] md:w-[420px] md:h-[420px] rounded-full overflow-hidden border-4 border-primary/20 shadow-[0_40px_100px_-20px_rgba(10,15,44,0.2)]">
+                            <div className="relative z-10 w-[340px] h-[340px] md:w-[420px] md:h-[420px] rounded-full overflow-hidden">
                                 <img
                                     src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&auto=format&fit=crop&q=80"
                                     alt="Cameroonian children in school"
@@ -108,7 +108,7 @@ const ImpactDashboard: React.FC = () => {
                             <motion.div
                                 animate={{ y: [0, -10, 0] }}
                                 transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut' }}
-                                className="absolute top-8 -left-4 md:-left-12 bg-white rounded-3xl px-6 py-4 shadow-2xl border border-slate-100 z-20"
+                                className="absolute top-8 -left-4 md:-left-12 rounded-3xl px-6 py-4 z-20"
                             >
                                 <p className="text-primary text-3xl font-black tracking-tighter">15k+</p>
                                 <p className="text-slate-400 text-[10px] font-black uppercase tracking-widest">Beneficiaries Goal</p>
@@ -117,7 +117,7 @@ const ImpactDashboard: React.FC = () => {
                             <motion.div
                                 animate={{ y: [0, 10, 0] }}
                                 transition={{ repeat: Infinity, duration: 5, ease: 'easeInOut', delay: 1 }}
-                                className="absolute bottom-16 -right-4 md:-right-10 bg-navy rounded-3xl px-6 py-4 shadow-2xl z-20"
+                                className="absolute bottom-16 -right-4 md:-right-10 rounded-3xl px-6 py-4 z-20"
                             >
                                 <p className="text-white text-3xl font-black tracking-tighter">5</p>
                                 <p className="text-slate-400 text-[10px] font-black uppercase tracking-widest">Partner Schools</p>

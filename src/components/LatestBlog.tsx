@@ -33,15 +33,15 @@ const LatestBlog = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {latestPosts.map((post, i) => (
                         <FadeIn key={post.id} direction="up" delay={i * 0.1} fullWidth>
-                            <article className="group bg-white rounded-[3rem] overflow-hidden border border-slate-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-700 flex flex-col h-full">
-                                <div className="relative h-64 overflow-hidden">
+                            <article className="group overflow-hidden rounded-[3rem] transition-all duration-700 flex flex-col h-full">
+                                <div className="relative h-64 overflow-hidden rounded-[3rem]">
                                     <img
                                         src={post.image}
                                         alt={post.title}
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
                                     />
                                     <div className="absolute top-6 left-6">
-                                        <span className="px-4 py-2 rounded-lg bg-white/90 backdrop-blur-md text-navy text-[10px] font-black uppercase tracking-widest shadow-xl">
+                                        <span className="px-4 py-2 rounded-lg bg-white/90 backdrop-blur-md text-navy text-[10px] font-black uppercase tracking-widest">
                                             {post.category}
                                         </span>
                                     </div>

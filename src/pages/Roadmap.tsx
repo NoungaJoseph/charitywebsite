@@ -60,7 +60,7 @@ const Roadmap = () => {
                     <div className="space-y-12">
                         {phases.map((phase, i) => (
                             <FadeIn key={phase.title} delay={i * 0.1} direction="up" fullWidth>
-                                <div className="group bg-white rounded-[3rem] p-12 shadow-premium hover:shadow-2xl transition-all duration-700 border border-slate-100/50 relative overflow-hidden">
+                                <div className="group rounded-[3rem] p-12 transition-all duration-700 relative overflow-hidden">
                                     <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full translate-x-1/2 -translate-y-1/2 blur-3xl group-hover:bg-primary/10 transition-colors" />
 
                                     <div className="flex flex-col lg:flex-row gap-12 items-start relative z-10">

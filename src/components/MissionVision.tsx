@@ -22,8 +22,8 @@ const MissionVision = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-[1100px]">
                     {/* Mission */}
                     <FadeIn direction="up" fullWidth>
-                        <div className="group bg-white rounded-xl border border-slate-200 p-10 flex flex-col items-start shadow-sm hover:shadow-xl hover:border-primary transition-all duration-300 h-full">
-                            <div className="mb-8 w-20 h-20 rounded-2xl bg-white shadow-soft border border-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                        <div className="group rounded-xl p-10 flex flex-col items-start transition-all duration-300 h-full">
+                            <div className="mb-8 w-20 h-20 rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500">
                                 <Target className="w-10 h-10" />
                             </div>
                             <h3 className="text-navy text-3xl font-bold mb-6">Our Mission</h3>
@@ -45,8 +45,8 @@ const MissionVision = () => {
 
                     {/* Vision */}
                     <FadeIn direction="up" delay={0.2} fullWidth>
-                        <div className="group bg-white rounded-xl border border-slate-200 p-10 flex flex-col items-start shadow-sm hover:shadow-xl hover:border-green-400 transition-all duration-300 h-full">
-                            <div className="mb-8 w-20 h-20 rounded-2xl bg-white shadow-soft border border-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                        <div className="group rounded-xl p-10 flex flex-col items-start transition-all duration-300 h-full">
+                            <div className="mb-8 w-20 h-20 rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500">
                                 <Eye className="w-10 h-10" />
                             </div>
                             <h3 className="text-navy text-3xl font-bold mb-6">Our Vision</h3>
@@ -69,7 +69,7 @@ const MissionVision = () => {
 
                 {/* Community image section */}
                 <FadeIn direction="up" className="w-full max-w-7xl">
-                    <div className="mt-20 w-full aspect-[21/9] rounded-[3rem] overflow-hidden relative shadow-soft group">
+                    <div className="mt-20 w-full aspect-[21/9] rounded-[3rem] overflow-hidden relative group">
                         <img
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc1JcXtKDNQV5qEdW6xfvhZCw3J3IQ31IqldJEQyBh2MmkpFrTNH9wC3i5XWZ7Gl1ZeWbztEjm1PphirlSbZbsaKtMNDmQ9FRITrqdKIo7j3e6BC0EsyBM08Tm7dDlL7IMBAjtxrIX5ZOmpfq0RdWQe40cI0CHCNLgAUQuGpnWK0cg5iy_W-kpxXq07OXBrjWF-T7vqc6I4d1gARE7MEbAc63-15U2Ex0aoK1jQri2OxOhwwXNSOHQjCX7WjOXNFvobV1SR2M7-LE"
                             alt="African community gathering"

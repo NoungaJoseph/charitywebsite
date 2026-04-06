@@ -322,7 +322,7 @@ const ProgramDetailPage = () => {
                         <div className="space-y-6">
                             {/* Timeline */}
                             <FadeIn direction="left">
-                                <div className="bg-white rounded-3xl border border-slate-100 shadow-lg p-7">
+                                <div className="rounded-3xl p-7">
                                     <h3 className="text-slate-900 font-black text-lg mb-6">Milestones</h3>
                                     <div className="space-y-6 relative before:absolute before:left-3 before:top-2 before:bottom-2 before:w-0.5 before:bg-green-100">
                                         {program.milestones.map((m, i) => (

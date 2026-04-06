@@ -83,11 +83,11 @@ const ProgramsOverview = () => {
                         {/* Image side */}
                         <div className="lg:w-1/2 relative w-full group">
                             <FadeIn direction={idx % 2 === 0 ? "right" : "left"}>
-                                <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] w-full">
+                                <div className="relative rounded-3xl overflow-hidden aspect-[4/3] w-full">
                                     <img src={prog.image} alt={prog.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                     {/* Overlay badge */}
-                                    <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-white/50 flex items-center gap-3">
-                                        <div className="w-10 h-10 rounded-xl bg-slate-50 flex items-center justify-center shadow-inner">
+                                    <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 flex items-center gap-3">
+                                        <div className="w-10 h-10 rounded-xl flex items-center justify-center">
                                             {prog.icon}
                                         </div>
                                         <div>
@@ -114,7 +114,7 @@ const ProgramsOverview = () => {
                                 
                                 <div className="grid sm:grid-cols-2 gap-4 mt-6">
                                     {prog.highlights.map((h) => (
-                                        <div key={h} className="flex items-center gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-100 group hover:bg-white hover:border-green-200 hover:shadow-lg transition-all duration-300">
+                                        <div key={h} className="flex items-center gap-3 p-4 rounded-2xl group hover:shadow-lg transition-all duration-300">
                                             <CheckCircle className="text-green-600 w-5 h-5 flex-shrink-0" />
                                             <span className="text-slate-800 text-sm font-bold">{h}</span>
                                         </div>

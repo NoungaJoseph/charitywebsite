@@ -118,7 +118,7 @@ const FocusCommunities = () => {
                     <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                         {interventionTypes.map((item) => (
                             <FadeIn key={item.label} direction="up">
-                                <div className="text-center p-6 rounded-2xl bg-slate-50 hover:shadow-lg transition-all duration-300 group">
+                                <div className="text-center p-6 rounded-2xl transition-all duration-300 group">
                                     <div className={`w-14 h-14 rounded-2xl ${item.color} flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform`}>
                                         {item.icon}
                                     </div>
@@ -169,7 +169,7 @@ const FocusCommunities = () => {
                                         whileHover={{ x: 4 }}
                                         className="flex items-start gap-4 p-4 rounded-2xl hover:bg-green-50 transition-colors group cursor-default"
                                     >
-                                        <div className="w-10 h-10 rounded-xl bg-white border border-slate-100 shadow-sm flex items-center justify-center flex-shrink-0 group-hover:shadow-md transition-shadow">
+                                        <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 transition-shadow">
                                             {item.icon}
                                         </div>
                                         <div>
@@ -200,7 +200,7 @@ const FocusCommunities = () => {
                             <FadeIn key={region.name} direction="up" delay={i * 0.08}>
                                 <motion.div
                                     whileHover={{ y: -4 }}
-                                    className={`bg-white rounded-3xl border ${region.colorBorder} overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500`}
+                                    className={`rounded-3xl overflow-hidden transition-all duration-500`}
                                 >
                                     {/* Card Header */}
                                     <div className={`${region.colorLight} p-6 border-b ${region.colorBorder}`}>

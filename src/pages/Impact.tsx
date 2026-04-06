@@ -78,7 +78,7 @@ const ImpactPage = () => {
                                     { icon: Heart, value: '45+', label: 'Communities Helped' },
                                 ].map((stat) => (
                                     <div key={stat.label} className="flex flex-col items-center gap-6 group">
-                                        <div className="w-20 h-20 rounded-3xl bg-slate-50 flex items-center justify-center text-navy group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-sm group-hover:shadow-2xl group-hover:shadow-primary/20">
+                                        <div className="w-20 h-20 rounded-3xl flex items-center justify-center text-navy transition-all duration-500">
                                             <stat.icon className="w-10 h-10" />
                                         </div>
                                         <div className="space-y-1">
@@ -128,7 +128,7 @@ const ImpactPage = () => {
                                     <p className="text-slate-400 leading-relaxed mb-8">Track how your contributions are making a difference across Cameroon in real time.</p>
                                     <div className="grid grid-cols-2 gap-6">
                                         {dashboardStats.map((d) => (
-                                            <div key={d.label} className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center shadow-2xl">
+                                            <div key={d.label} className="rounded-2xl p-6 text-center">
                                                 <p className="text-primary text-4xl font-black">{d.value}{d.suffix}</p>
                                                 <p className="text-white text-sm mt-1 uppercase tracking-widest font-semibold opacity-60">{d.label}</p>
                                             </div>
@@ -136,7 +136,7 @@ const ImpactPage = () => {
                                     </div>
                                 </div>
                                 {/* Chart visualization */}
-                                <div className="lg:w-1/2 bg-white/5 border border-white/10 rounded-[3rem] p-8 shadow-2xl">
+                                <div className="lg:w-1/2 rounded-[3rem] p-8">
                                     <p className="text-white font-bold text-sm mb-6 uppercase tracking-widest opacity-60">Program Distribution</p>
                                     {[
                                         { label: 'Scholarships', pct: 40, color: 'bg-primary' },
@@ -187,7 +187,7 @@ const ImpactPage = () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                                 {['2024-2025 Strategic Plan', 'Organization Prospectus'].map((title) => (
                                     <FadeIn key={title} direction="up" fullWidth>
-                                        <div className="bg-white rounded-[3rem] p-12 shadow-premium hover:shadow-2xl transition-all duration-700 group relative overflow-hidden border border-slate-100/50">
+                                        <div className="rounded-[3rem] p-12 transition-all duration-700 group relative overflow-hidden">
                                             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full translate-x-1/2 -translate-y-1/2 blur-3xl group-hover:bg-primary/10 transition-colors" />
                                             <div className="flex items-center gap-8 mb-10 relative z-10">
                                                 <div className="w-20 h-20 bg-slate-50 rounded-2xl flex items-center justify-center text-navy group-hover:bg-navy group-hover:text-white transition-all duration-500 shadow-inner">

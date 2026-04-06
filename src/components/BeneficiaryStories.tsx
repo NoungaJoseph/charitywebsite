@@ -63,7 +63,7 @@ const BeneficiaryStories = () => {
                             {/* Left — Rounded photo */}
                             <div className="relative">
                                 {/* Rounded rectangle photo with cut corner like reference */}
-                                <div className="w-full max-w-md mx-auto lg:mx-0 rounded-[3rem_3rem_8rem_3rem] overflow-hidden aspect-[4/5] shadow-2xl shadow-navy/15">
+                                <div className="w-full max-w-md mx-auto lg:mx-0 rounded-[3rem_3rem_8rem_3rem] overflow-hidden aspect-[4/5]">
                                     <img
                                         src={story.image}
                                         alt={story.name}
@@ -94,7 +94,7 @@ const BeneficiaryStories = () => {
 
                                 <Link
                                     to="/stories"
-                                    className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-white font-black text-sm uppercase tracking-widest rounded-2xl hover:bg-primary/90 hover:scale-105 transition-all shadow-xl shadow-primary/30"
+                                    className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-white font-black text-sm uppercase tracking-widest rounded-2xl hover:bg-primary/90 hover:scale-105 transition-all"
                                 >
                                     Learn More
                                 </Link>

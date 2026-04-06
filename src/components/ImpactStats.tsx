@@ -26,7 +26,7 @@ const ImpactStats = () => {
             </FadeIn>
 
             {/* KPI Grid */}
-            <div className="bg-white rounded-2xl shadow-xl border border-slate-100 p-8 md:p-16 mb-16">
+            <div className="p-8 md:p-16 mb-16">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 divide-y sm:divide-y-0 lg:divide-x divide-slate-100">
                     {stats.map((stat, idx) => (
                         <FadeIn key={stat.label} delay={idx * 0.1} direction="up" fullWidth>
@@ -50,7 +50,7 @@ const ImpactStats = () => {
                         Your support directly funds essential educational infrastructure and critical teacher welfare programs.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <Link to="/donate" className="flex items-center justify-center px-10 py-4 bg-primary text-white font-black rounded-lg hover:-translate-y-0.5 transition-all shadow-lg shadow-primary/25">
+                        <Link to="/donate" className="flex items-center justify-center px-10 py-4 bg-primary text-white font-black rounded-lg hover:-translate-y-0.5 transition-all">
                             Donate Now
                         </Link>
                         <Link to="/impact" className="flex items-center justify-center px-10 py-4 border-2 border-slate-700 text-white font-black rounded-lg hover:bg-slate-800 transition-colors">

@@ -54,7 +54,7 @@ const SchoolRegistrationPage = () => {
                                     alt="School students"
                                     className="absolute inset-0 w-full h-full object-cover"
                                 />
-                                <div className="absolute bottom-8 left-8 bg-white backdrop-blur-md rounded-xl p-5 shadow-xl border border-white">
+                                <div className="absolute bottom-8 left-8 rounded-xl p-5">
                                     <p className="text-navy font-black text-2xl">150+</p>
                                     <p className="text-slate-500 text-sm">Partner Schools</p>
                                 </div>
@@ -79,7 +79,7 @@ const SchoolRegistrationPage = () => {
                                     { icon: 'grade', title: 'Academic Standing', desc: 'Nominated students must be in top 5% of their cohort by grades.' },
                                 ].map((item, i) => (
                                     <FadeIn key={item.title} direction="up" delay={i * 0.1}>
-                                        <div className="bg-background-light rounded-xl p-6 border border-slate-100 h-full">
+                                        <div className="rounded-xl p-6 h-full">
                                             <div className="w-12 h-12 bg-white border border-primary rounded-xl flex items-center justify-center text-primary mb-4">
                                                 <span className="material-symbols-outlined">{item.icon}</span>
                                             </div>
@@ -132,7 +132,7 @@ const SchoolRegistrationPage = () => {
                                 </div>
                             </FadeIn>
                             <FadeIn direction="up" delay={0.2}>
-                                <div className="bg-background-light rounded-2xl border border-slate-200 p-8 md:p-12 shadow-xl">
+                                <div className="rounded-2xl p-8 md:p-12">
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                                         <div>
                                             <label className="block text-sm font-bold text-navy mb-2">School Name *</label>

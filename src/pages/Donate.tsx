@@ -91,7 +91,7 @@ const Donate = () => {
                                     onClick={() => setMethod(p.id)}
                                     className={`w-full p-6 rounded-2xl border flex items-center gap-6 transition-all ${method === p.id ? 'bg-navy text-white shadow-2xl scale-[1.02]' : `${p.color} hover:bg-slate-50 hover:scale-[1.01]`}`}
                                 >
-                                    <div className={`p-4 rounded-xl ${method === p.id ? 'bg-white/10' : 'bg-white shadow-sm'}`}>
+                                    <div className={`p-4 rounded-xl`}>
                                         {p.icon}
                                     </div>
                                     <span className="font-black text-lg tracking-tight">{p.name}</span>
@@ -123,7 +123,7 @@ const Donate = () => {
                             <h3 className="text-3xl font-black text-navy mb-2 ">Confirm Details</h3>
                             <p className="text-slate-500 font-medium">Verify your payment information.</p>
                         </div>
-                        <div className="p-8 rounded-3xl bg-slate-50 border border-slate-100 space-y-6">
+                        <div className="p-8 rounded-3xl space-y-6">
                             <div className="flex justify-between items-center pb-6 border-b border-slate-200">
                                 <span className="text-slate-400 font-black uppercase text-[10px] tracking-widest">Amount</span>
                                 <span className="text-navy text-2xl font-black ">{parseInt(amount).toLocaleString()} XAF</span>
@@ -131,7 +131,7 @@ const Donate = () => {
 
                             {method === 'bank' ? (
                                 <div className="space-y-4">
-                                    <div className="p-4 bg-white rounded-xl border border-slate-100 space-y-2">
+                                    <div className="p-4 rounded-xl space-y-2">
                                         <p className="text-[10px] font-black uppercase tracking-widest text-primary">Bank Details (UBA Cameroon)</p>
                                         <p className="text-navy font-black text-lg">ACC: 10034 00003 456789 22</p>
                                         <p className="text-slate-500 text-xs font-bold uppercase">Enako Outreach Foundation</p>
@@ -230,7 +230,7 @@ const Donate = () => {
                                         { icon: Globe, title: 'Direct Impact', desc: 'Straight to community projects' }
                                     ].map((item, i) => (
                                         <div key={i} className="space-y-3">
-                                            <div className="w-12 h-12 rounded-xl bg-white shadow-soft border border-slate-100 flex items-center justify-center text-navy">
+                                            <div className="w-12 h-12 rounded-xl flex items-center justify-center text-navy">
                                                 <item.icon className="w-6 h-6" />
                                             </div>
                                             <h4 className="text-sm font-black text-navy uppercase tracking-widest ">{item.title}</h4>
@@ -244,7 +244,7 @@ const Donate = () => {
                         {/* RIGHT DONATION CARD */}
                         <div className="lg:w-1/2 w-full max-w-2xl">
                             <FadeIn direction="left" delay={0.2}>
-                                <div className="bg-white rounded-[3.5rem] p-10 md:p-14 shadow-premium border border-slate-100/50 relative overflow-hidden">
+                                <div className="rounded-[3.5rem] p-10 md:p-14 relative overflow-hidden">
                                     {/* Step Indicator */}
                                     {step < 4 && (
                                         <div className="flex gap-2 mb-12">

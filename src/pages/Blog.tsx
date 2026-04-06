@@ -98,9 +98,9 @@ const Blog = () => {
                                     <FadeIn key={post.id} direction="up" delay={i * 0.05} fullWidth>
                                         <motion.article
                                             whileHover={{ y: -4 }}
-                                            className="group bg-white rounded-3xl overflow-hidden border border-slate-100 hover:shadow-2xl hover:border-green-100 transition-all duration-500 flex flex-col h-full"
+                                            className="group rounded-3xl overflow-hidden transition-all duration-500 flex flex-col h-full"
                                         >
-                                            <div className="relative h-56 overflow-hidden">
+                                            <div className="relative h-56 overflow-hidden rounded-3xl">
                                                 <img
                                                     src={post.image}
                                                     alt={post.title}

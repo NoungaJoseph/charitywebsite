@@ -100,7 +100,7 @@ const VolunteerPage = () => {
                                     { icon: Award, title: 'Skill Development', desc: 'Share your expertise in technology, business, or trades to empower youth with marketable skills.' },
                                 ].map((role, i) => (
                                     <FadeIn key={role.title} delay={i * 0.1} direction="up" fullWidth>
-                                        <div className="bg-white p-10 rounded-[3rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.05)] hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.08)] transition-all duration-500 group border border-slate-100/50 h-full flex flex-col">
+                                        <div className="p-10 rounded-[3rem] transition-all duration-500 group border border-transparent h-full flex flex-col">
                                             <div className="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center text-navy group-hover:bg-primary group-hover:text-white transition-all duration-500 mb-8">
                                                 <role.icon className="w-8 h-8" />
                                             </div>
@@ -125,7 +125,7 @@ const VolunteerPage = () => {
                                 <p className="text-slate-500 font-medium max-w-xl">We'll review your application and respond with potential placements within 48 hours.</p>
                             </div>
 
-                            <div className="bg-white rounded-[3rem] p-12 md:p-20 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.05)] border border-slate-100/50">
+                            <div className="rounded-[3rem] p-12 md:p-20">
                                 <form className="space-y-10" onSubmit={(e) => e.preventDefault()}>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                                         <div className="space-y-4">

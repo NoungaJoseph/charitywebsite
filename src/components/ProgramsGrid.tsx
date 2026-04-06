@@ -102,10 +102,10 @@ const ProgramsGrid = () => {
                             <motion.div whileHover={{ y: -6 }} transition={{ duration: 0.3 }}>
                                 <Link
                                     to={program.href}
-                                    className="group relative flex flex-col rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-xl overflow-hidden transition-all duration-500 h-full"
+                                    className="group relative flex flex-col overflow-hidden transition-all duration-500 h-full"
                                 >
                                     {/* Image */}
-                                    <div className="relative h-52 overflow-hidden">
+                                    <div className="relative h-52 overflow-hidden rounded-3xl">
                                         <img src={program.image} alt={program.name}
                                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent" />

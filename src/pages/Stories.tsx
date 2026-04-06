@@ -115,7 +115,7 @@ const StoriesPage = () => {
                                 <span className="text-primary font-black tracking-[0.4em] uppercase text-[10px] block mb-4">The Highlight</span>
                                 <h2 className="text-navy text-4xl md:text-5xl font-black tracking-tighter">Featured <span className="text-primary ">Narrative.</span></h2>
                             </div>
-                            <div className="relative group rounded-[3rem] overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] flex flex-col lg:flex-row transition-all duration-700 hover:shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] bg-navy">
+                            <div className="relative group rounded-[3rem] overflow-hidden flex flex-col lg:flex-row transition-all duration-700 bg-navy">
                                 <div className="lg:w-1/2 h-[450px] lg:h-auto relative overflow-hidden">
                                     <img src={stories[0].image} alt={stories[0].title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-110" />
                                     <div className="absolute inset-0 bg-navy/20 group-hover:bg-transparent transition-colors" />
@@ -151,7 +151,7 @@ const StoriesPage = () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                                 {stories.slice(1).map((story, i) => (
                                     <FadeIn key={story.id} delay={i * 0.1} direction="up">
-                                        <div className="bg-white rounded-[3rem] overflow-hidden shadow-[0_20px_50px_-12px_rgba(0,0,0,0.05)] hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.08)] transition-all duration-700 group border border-slate-100/50 flex flex-col h-full">
+                                        <div className="rounded-[3rem] overflow-hidden transition-all duration-700 group flex flex-col h-full">
                                             <div className="h-72 overflow-hidden relative">
                                                 <img src={story.image} alt={story.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" />
                                                 <div className="absolute inset-0 bg-navy/10 group-hover:bg-transparent transition-colors" />

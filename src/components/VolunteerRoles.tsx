@@ -33,8 +33,8 @@ const VolunteerRoles = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {roles.map((role, i) => (
                     <FadeIn key={role.title} direction="up" delay={i * 0.1}>
-                        <div className="group bg-white dark:bg-slate-900 p-10 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-2xl hover:border-primary transition-all text-center h-full">
-                            <div className="size-20 bg-white border border-primary rounded-2xl flex items-center justify-center mb-8 mx-auto group-hover:bg-primary transition-colors">
+                        <div className="group p-10 rounded-3xl transition-all text-center h-full">
+                            <div className="size-20 rounded-2xl flex items-center justify-center mb-8 mx-auto group-hover:bg-primary transition-colors">
                                 <span className="material-symbols-outlined text-4xl text-primary group-hover:text-white">{role.icon}</span>
                             </div>
                             <h3 className="text-2xl font-bold text-navy dark:text-white mb-4">{role.title}</h3>
