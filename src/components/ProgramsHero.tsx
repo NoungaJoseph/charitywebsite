@@ -9,7 +9,7 @@ const ProgramsHero = () => {
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-black/60 z-10" />
                     <img
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhzqWgqdUhwOSuTCn3E8-W-q-6P_cZdP4gRWRX0R0kYeomrCIXVdv9vPWJUGf6Z0oDkLjAlOE2oAI-7B2x0BIXRdRXfVr2FNFY1KBa3oJJA8eCoqd3W-hjDpObRiFZqPQ5QlCrpK8SEzB7iABq3S2HUXG7uXV9EIWS1Q-tLXqj0mJM0SIhp2kqyMb7IvjbK6TAmf6Io87x0fA_etV0ZK66MBn2VkV3oygpg3VdVFe6M5PuvWf6OhT9MhVVpzg7QUy_p9xvqKw"
+                        src="/assets/charity/our-expertize-in-action.png"
                         alt="Group of diverse community members"
                         className="w-full h-full object-cover"
                     />

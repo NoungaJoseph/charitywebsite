@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
         date: 'March 5, 2024',
         author: 'Enako Research Team',
         excerpt: 'How the ongoing conflict in the North-West and South-West regions has displaced thousands of students.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZUyPMKzz97KSXoff8blkwYi-7OlEWfpoD7t_PzsC61jWkhj2aoRMySVto9QQdrpY6f7EYh6a4cqHsnm-o3zeNtfs3uG6QeFsyeH15m5nhO8m8-JntiIrj_aD55jYw7DAz7WRb9J9GXjUNmpAzlZH9UZn5AuWADN73TVPg2IN3yNxHwM3D4orshsXqwqsklVQb4kGch5pjGy6PlBqOeRViKw-YNjbBYm141n0bGV5EL3cj8pQ8y_Tmkk6hX9h7fnXuv9ttgJeFjV4',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'The Anglophone crisis has severely impacted the educational landscape in Cameroon. Schools have been closed for years in certain areas, leading to a "lost generation" of students...'
     },
     {
@@ -27,7 +27,7 @@ export const blogPosts: BlogPost[] = [
         date: 'February 28, 2024',
         author: 'Enako Research Team',
         excerpt: 'Inside the effort to keep schools open despite security challenges in the Far North region.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA0D42cGvlYkLGdY3Pyp7nz-KaP3VV6UPlGjinq-S7S6a4Arr-3zmJCevxHP7pswwOm0vZC1anWyer2TwCYBDPL0XAN_PcFTFcW2T0W9IKytjETMkyRGl397af6EKKoQMi0zstLUmREEuurpP46enI208yrXJn4br0_ZmSofXYzty42SaLMIZvnlGbIxHiXN4V3v1MKEweoMIp_wZdUcYITheMR8YeuoaTzs707dR1PH7HAyRLzWn6h8Nx53YONQRjpw5qPnEv0jZA',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'In the Far North region, education is a tool for peace. Communities are rallying to protect schools and provide a safe learning environment...'
     },
     {
@@ -37,7 +37,7 @@ export const blogPosts: BlogPost[] = [
         date: 'February 15, 2024',
         author: 'Enako Health Desk',
         excerpt: 'Why clean water initiatives are the most important investment for Cameroon’s coastal cities.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBc1JcXtKDNQV5qEdW6xfvhZCw3J3IQ31IqldJEQyBh2MmkpFrTNH9wC3i5XWZ7Gl1ZeWbztEjm1PphirlSbZbsaKtMNDmQ9FRITrqdKIo7j3e6BC0EsyBM08Tm7dDlL7IMBAjtxrIX5ZOmpfq0RdWQe40cI0CHCNLgAUQuGpnWK0cg5iy_W-kpxXq07OXBrjWF-T7vqc6I4d1gARE7MEbAc63-15U2Ex0aoK1jQri2OxOhwwXNSOHQjCX7WjOXNFvobV1SR2M7-LE',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'Cholera remains a persistent threat in Douala and Yaoundé. Enako Outreach is working on pilot water purification projects...'
     },
     {
@@ -47,7 +47,7 @@ export const blogPosts: BlogPost[] = [
         date: 'February 10, 2024',
         author: 'Medical Volunteer',
         excerpt: 'How simple mosquito net distribution and school-based screenings are transforming attendance.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZUyPMKzz97KSXoff8blkwYi-7OlEWfpoD7t_PzsC61jWkhj2aoRMySVto9QQdrpY6f7EYh6a4cqHsnm-o3zeNtfs3uG6QeFsyeH15m5nhO8m8-JntiIrj_aD55jYw7DAz7WRb9J9GXjUNmpAzlZH9UZn5AuWADN73TVPg2IN3yNxHwM3D4orshsXqwqsklVQb4kGch5pjGy6PlBqOeRViKw-YNjbBYm141n0bGV5EL3cj8pQ8y_Tmkk6hX9h7fnXuv9ttgJeFjV4',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'Malaria is the leading cause of school absenteeism in Cameroon. By distributing nets, we can keep children in class...'
     },
     {
@@ -57,7 +57,7 @@ export const blogPosts: BlogPost[] = [
         date: 'February 5, 2024',
         author: 'Social Welfare Lead',
         excerpt: 'Exploring the precarious situation of private orphanages in Douala and the need for structural support.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZUyPMKzz97KSXoff8blkwYi-7OlEWfpoD7t_PzsC61jWkhj2aoRMySVto9QQdrpY6f7EYh6a4cqHsnm-o3zeNtfs3uG6QeFsyeH15m5nhO8m8-JntiIrj_aD55jYw7DAz7WRb9J9GXjUNmpAzlZH9UZn5AuWADN73TVPg2IN3yNxHwM3D4orshsXqwqsklVQb4kGch5pjGy6PlBqOeRViKw-YNjbBYm141n0bGV5EL3cj8pQ8y_Tmkk6hX9h7fnXuv9ttgJeFjV4',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'Many orphanages operate on less than 1,000 XAF per child per day. Enako Outreach is building a sponsorship bridge...'
     },
     {
@@ -67,7 +67,7 @@ export const blogPosts: BlogPost[] = [
         date: 'January 28, 2024',
         author: 'Education Specialist',
         excerpt: 'Bridging the literacy gap between urban centers and rural forest communities.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA0D42cGvlYkLGdY3Pyp7nz-KaP3VV6UPlGjinq-S7S6a4Arr-3zmJCevxHP7pswwOm0vZC1anWyer2TwCYBDPL0XAN_PcFTFcW2T0W9IKytjETMkyRGl397af6EKKoQMi0zstLUmREEuurpP46enI208yrXJn4br0_ZmSofXYzty42SaLMIZvnlGbIxHiXN4V3v1MKEweoMIp_wZdUcYITheMR8YeuoaTzs707dR1PH7HAyRLzWn6h8Nx53YONQRjpw5qPnEv0jZA',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'Rural literacy remains a challenge due to lack of teachers and infrastructure. Our award programs aim to attract talent to these areas...'
     },
     {
@@ -77,7 +77,7 @@ export const blogPosts: BlogPost[] = [
         date: 'January 20, 2024',
         author: 'Tech Lead',
         excerpt: 'Why off-grid solar solutions are the key to modernizing education in power-unstable areas.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA0D42cGvlYkLGdY3Pyp7nz-KaP3VV6UPlGjinq-S7S6a4Arr-3zmJCevxHP7pswwOm0vZC1anWyer2TwCYBDPL0XAN_PcFTFcW2T0W9IKytjETMkyRGl397af6EKKoQMi0zstLUmREEuurpP46enI208yrXJn4br0_ZmSofXYzty42SaLMIZvnlGbIxHiXN4V3v1MKEweoMIp_wZdUcYITheMR8YeuoaTzs707dR1PH7HAyRLzWn6h8Nx53YONQRjpw5qPnEv0jZA',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'Frequent blackouts disrupt learning. Solar energy provides a reliable solution for lighting and computers...'
     },
     {
@@ -87,7 +87,7 @@ export const blogPosts: BlogPost[] = [
         date: 'January 15, 2024',
         author: 'Volunteer Mentor',
         excerpt: 'Highlighting the success of scholarship programs specifically for young women pursuing hard sciences.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZUyPMKzz97KSXoff8blkwYi-7OlEWfpoD7t_PzsC61jWkhj2aoRMySVto9QQdrpY6f7EYh6a4cqHsnm-o3zeNtfs3uG6QeFsyeH15m5nhO8m8-JntiIrj_aD55jYw7DAz7WRb9J9GXjUNmpAzlZH9UZn5AuWADN73TVPg2IN3yNxHwM3D4orshsXqwqsklVQb4kGch5pjGy6PlBqOeRViKw-YNjbBYm141n0bGV5EL3cj8pQ8y_Tmkk6hX9h7fnXuv9ttgJeFjV4',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'Closing the gender gap in STEM is crucial for Cameroon’s development. Our scholarships are making a difference...'
     },
     {
@@ -97,7 +97,7 @@ export const blogPosts: BlogPost[] = [
         date: 'January 10, 2024',
         author: 'Economic Analyst',
         excerpt: 'How vocational training and entrepreneurship grants are providing a new path for graduates.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZUyPMKzz97KSXoff8blkwYi-7OlEWfpoD7t_PzsC61jWkhj2aoRMySVto9QQdrpY6f7EYh6a4cqHsnm-o3zeNtfs3uG6QeFsyeH15m5nhO8m8-JntiIrj_aD55jYw7DAz7WRb9J9GXjUNmpAzlZH9UZn5AuWADN73TVPg2IN3yNxHwM3D4orshsXqwqsklVQb4kGch5pjGy6PlBqOeRViKw-YNjbBYm141n0bGV5EL3cj8pQ8y_Tmkk6hX9h7fnXuv9ttgJeFjV4',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'Yaoundé’s youth face a tough job market. Enako Outreach is launching vocational centers to provide practical skills...'
     },
     {
@@ -107,7 +107,7 @@ export const blogPosts: BlogPost[] = [
         date: 'January 5, 2024',
         author: 'Agri-Expert',
         excerpt: 'Predicting rainfall patterns to save the livelihoods of thousands of community members.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZUyPMKzz97KSXoff8blkwYi-7OlEWfpoD7t_PzsC61jWkhj2aoRMySVto9QQdrpY6f7EYh6a4cqHsnm-o3zeNtfs3uG6QeFsyeH15m5nhO8m8-JntiIrj_aD55jYw7DAz7WRb9J9GXjUNmpAzlZH9UZn5AuWADN73TVPg2IN3yNxHwM3D4orshsXqwqsklVQb4kGch5pjGy6PlBqOeRViKw-YNjbBYm141n0bGV5EL3cj8pQ8y_Tmkk6hX9h7fnXuv9ttgJeFjV4',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'Unpredictable weather is harming crop yields. We are providing training on resilient farming techniques...'
     },
     {
@@ -117,7 +117,7 @@ export const blogPosts: BlogPost[] = [
         date: 'December 28, 2023',
         author: 'Psychologist Volunteer',
         excerpt: 'Why rewarding teachers must include mental health support and professional counseling.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZUyPMKzz97KSXoff8blkwYi-7OlEWfpoD7t_PzsC61jWkhj2aoRMySVto9QQdrpY6f7EYh6a4cqHsnm-o3zeNtfs3uG6QeFsyeH15m5nhO8m8-JntiIrj_aD55jYw7DAz7WRb9J9GXjUNmpAzlZH9UZn5AuWADN73TVPg2IN3yNxHwM3D4orshsXqwqsklVQb4kGch5pjGy6PlBqOeRViKw-YNjbBYm141n0bGV5EL3cj8pQ8y_Tmkk6hX9h7fnXuv9ttgJeFjV4',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'Teaching is a high-stress job, especially in crisis zones. Enako Outreach provides counseling for our partner educators...'
     },
     {
@@ -127,7 +127,7 @@ export const blogPosts: BlogPost[] = [
         date: 'December 20, 2023',
         author: 'IT Consultant',
         excerpt: 'Bridging the gap between students with internet access and those without in Douala.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZUyPMKzz97KSXoff8blkwYi-7OlEWfpoD7t_PzsC61jWkhj2aoRMySVto9QQdrpY6f7EYh6a4cqHsnm-o3zeNtfs3uG6QeFsyeH15m5nhO8m8-JntiIrj_aD55jYw7DAz7WRb9J9GXjUNmpAzlZH9UZn5AuWADN73TVPg2IN3yNxHwM3D4orshsXqwqsklVQb4kGch5pjGy6PlBqOeRViKw-YNjbBYm141n0bGV5EL3cj8pQ8y_Tmkk6hX9h7fnXuv9ttgJeFjV4',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'The digital divide is widening. We are setting up computer labs in underserved schools to provide equitable access...'
     },
     {
@@ -137,7 +137,7 @@ export const blogPosts: BlogPost[] = [
         date: 'December 15, 2023',
         author: 'Human Rights Advocate',
         excerpt: 'How education-based interventions are keeping girls in schools in the North region.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZUyPMKzz97KSXoff8blkwYi-7OlEWfpoD7t_PzsC61jWkhj2aoRMySVto9QQdrpY6f7EYh6a4cqHsnm-o3zeNtfs3uG6QeFsyeH15m5nhO8m8-JntiIrj_aD55jYw7DAz7WRb9J9GXjUNmpAzlZH9UZn5AuWADN73TVPg2IN3yNxHwM3D4orshsXqwqsklVQb4kGch5pjGy6PlBqOeRViKw-YNjbBYm141n0bGV5EL3cj8pQ8y_Tmkk6hX9h7fnXuv9ttgJeFjV4',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'Child marriage is a harmful practice that ends education. We work with local leaders to advocate for the girl-child...'
     },
     {
@@ -147,7 +147,7 @@ export const blogPosts: BlogPost[] = [
         date: 'December 10, 2023',
         author: 'Social Scientist',
         excerpt: 'Why Douala’s economic growth often leaves the most vulnerable families behind.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZUyPMKzz97KSXoff8blkwYi-7OlEWfpoD7t_PzsC61jWkhj2aoRMySVto9QQdrpY6f7EYh6a4cqHsnm-o3zeNtfs3uG6QeFsyeH15m5nhO8m8-JntiIrj_aD55jYw7DAz7WRb9J9GXjUNmpAzlZH9UZn5AuWADN73TVPg2IN3yNxHwM3D4orshsXqwqsklVQb4kGch5pjGy6PlBqOeRViKw-YNjbBYm141n0bGV5EL3cj8pQ8y_Tmkk6hX9h7fnXuv9ttgJeFjV4',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'Economic growth is uneven. Enako Outreach focuses on urban centers where disparity is most visible...'
     },
     {
@@ -157,7 +157,7 @@ export const blogPosts: BlogPost[] = [
         date: 'December 5, 2023',
         author: 'Inclusive Ed Specialist',
         excerpt: 'Building ramps and inclusive curricula for Cameroonian students with special needs.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZUyPMKzz97KSXoff8blkwYi-7OlEWfpoD7t_PzsC61jWkhj2aoRMySVto9QQdrpY6f7EYh6a4cqHsnm-o3zeNtfs3uG6QeFsyeH15m5nhO8m8-JntiIrj_aD55jYw7DAz7WRb9J9GXjUNmpAzlZH9UZn5AuWADN73TVPg2IN3yNxHwM3D4orshsXqwqsklVQb4kGch5pjGy6PlBqOeRViKw-YNjbBYm141n0bGV5EL3cj8pQ8y_Tmkk6hX9h7fnXuv9ttgJeFjV4',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'Inclusive education is a right. We are retrofitting partner schools to accommodate all students...'
     },
     {
@@ -167,7 +167,7 @@ export const blogPosts: BlogPost[] = [
         date: 'November 28, 2023',
         author: 'Health Coordinator',
         excerpt: 'Reducing stigma andProviding resources to keep adolescent girls in school every day of the month.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZUyPMKzz97KSXoff8blkwYi-7OlEWfpoD7t_PzsC61jWkhj2aoRMySVto9QQdrpY6f7EYh6a4cqHsnm-o3zeNtfs3uG6QeFsyeH15m5nhO8m8-JntiIrj_aD55jYw7DAz7WRb9J9GXjUNmpAzlZH9UZn5AuWADN73TVPg2IN3yNxHwM3D4orshsXqwqsklVQb4kGch5pjGy6PlBqOeRViKw-YNjbBYm141n0bGV5EL3cj8pQ8y_Tmkk6hX9h7fnXuv9ttgJeFjV4',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'Lack of hygiene products is a major barrier to girls’ education. Our kits and training sessions are breaking this cycle...'
     },
     {
@@ -177,7 +177,7 @@ export const blogPosts: BlogPost[] = [
         date: 'November 20, 2023',
         author: 'Logistics Manager',
         excerpt: 'The critical need for educational resources in settlements housing Central African refugees.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZUyPMKzz97KSXoff8blkwYi-7OlEWfpoD7t_PzsC61jWkhj2aoRMySVto9QQdrpY6f7EYh6a4cqHsnm-o3zeNtfs3uG6QeFsyeH15m5nhO8m8-JntiIrj_aD55jYw7DAz7WRb9J9GXjUNmpAzlZH9UZn5AuWADN73TVPg2IN3yNxHwM3D4orshsXqwqsklVQb4kGch5pjGy6PlBqOeRViKw-YNjbBYm141n0bGV5EL3cj8pQ8y_Tmkk6hX9h7fnXuv9ttgJeFjV4',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'The refugee crisis requires an educational response. Enako Outreach supports schools in the East region...'
     },
     {
@@ -187,7 +187,7 @@ export const blogPosts: BlogPost[] = [
         date: 'November 10, 2023',
         author: 'Early Childhood Specialist',
         excerpt: 'Why early childhood education is the most predictor of long-term academic success in Cameroon.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZUyPMKzz97KSXoff8blkwYi-7OlEWfpoD7t_PzsC61jWkhj2aoRMySVto9QQdrpY6f7EYh6a4cqHsnm-o3zeNtfs3uG6QeFsyeH15m5nhO8m8-JntiIrj_aD55jYw7DAz7WRb9J9GXjUNmpAzlZH9UZn5AuWADN73TVPg2IN3yNxHwM3D4orshsXqwqsklVQb4kGch5pjGy6PlBqOeRViKw-YNjbBYm141n0bGV5EL3cj8pQ8y_Tmkk6hX9h7fnXuv9ttgJeFjV4',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'Preschool is often overlooked. We are investing in early childhood centers to provide a solid foundation...'
     },
     {
@@ -197,7 +197,7 @@ export const blogPosts: BlogPost[] = [
         date: 'November 5, 2023',
         author: 'Energy Consultant',
         excerpt: 'Empowering small businesses in Cameroon with reliable, clean solar energy.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZUyPMKzz97KSXoff8blkwYi-7OlEWfpoD7t_PzsC61jWkhj2aoRMySVto9QQdrpY6f7EYh6a4cqHsnm-o3zeNtfs3uG6QeFsyeH15m5nhO8m8-JntiIrj_aD55jYw7DAz7WRb9J9GXjUNmpAzlZH9UZn5AuWADN73TVPg2IN3yNxHwM3D4orshsXqwqsklVQb4kGch5pjGy6PlBqOeRViKw-YNjbBYm141n0bGV5EL3cj8pQ8y_Tmkk6hX9h7fnXuv9ttgJeFjV4',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'Small businesses struggle with power. Our micro-solar grants are helping local entrepreneurs thrive...'
     },
     {
@@ -207,7 +207,7 @@ export const blogPosts: BlogPost[] = [
         date: 'October 30, 2023',
         author: 'Environmental Hydrologist',
         excerpt: 'The critical role of deep-well boreholes in sustaining life and education in arid regions.',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZUyPMKzz97KSXoff8blkwYi-7OlEWfpoD7t_PzsC61jWkhj2aoRMySVto9QQdrpY6f7EYh6a4cqHsnm-o3zeNtfs3uG6QeFsyeH15m5nhO8m8-JntiIrj_aD55jYw7DAz7WRb9J9GXjUNmpAzlZH9UZn5AuWADN73TVPg2IN3yNxHwM3D4orshsXqwqsklVQb4kGch5pjGy6PlBqOeRViKw-YNjbBYm141n0bGV5EL3cj8pQ8y_Tmkk6hX9h7fnXuv9ttgJeFjV4',
+        image: '/assets/charity/our-expertize-in-action.png',
         content: 'Water is life. Deep-well boreholes are transformed schools and communities in the North...'
     }
 ];

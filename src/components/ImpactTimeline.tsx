@@ -7,28 +7,28 @@ const ImpactTimeline = () => {
             title: "Foundation Establishment",
             description: "Establishing our central mission in Africa and identifying our key community hubs for 2024.",
             icon: "foundation",
-            image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCcb4_DWsHwYKp5Omrx-8zeQoQggGtfHZSNX3wTBJ75NQI95GCqBkQ9fK2C1MPpoe2Su7cZ0mqGvttOfZkfzQsDf-J7NBMb_bsbOXrsWzbFXPAjv-FJVVGCzJBHMhLRXprOslvSn9byXJLSvy3JQTNx2rf_7URK1RZ3FbfI4G8Ht-sk673WQuVGEsHAu7opYtb2Gn5xy18vIDmlxbes_RtCIFiGB70JRjWY8vRb_qK-28i-2NGrygyjbfN2ygsnNBNSr1kMiawllBg"
+            image: "/assets/charity/our-expertize-in-action.png"
         },
         {
             year: "Phase 2: Pilot",
             title: "Inaugural Scholarships",
             description: "Targeting the first 50 scholarship recipients with full tuition and resource coverage.",
             icon: "school",
-            image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBvCd5Ii-UK1txKen80PgfMJgMIuU5IuLt4mICdFZX-TllxKclyVyh2nmxBQdEsdc31j4vHO2dRHg7mE7GOEITyLf021lxPPHMOIcTg0-ExUmVJ1rA-ZhfxmG97SJ1D1rIPiLKylU23ny_trTzZjF6y6dWBToWFucmRRcd5fvteOV8XjeFKRPli1XsQ61ZdBIKvh9uJFjnZWwQup5JIIkksgsIacHszx5H37XMt-Edjh6g5dpQnVhemtwQPRQ20zPVh7IjvEnsJ02I"
+            image: "/assets/charity/our-expertize-in-action.png"
         },
         {
             year: "Phase 3: Community",
             title: "Infrastructure Initiative",
             description: "Implementing sustainable solar power and clean water systems in target local villages.",
             icon: "handyman",
-            image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDTHi4Xw_xuTiFGD5e8afeYjqiN8Wrljxy4ELa4zpboozdVOK_VIW1LtuFtByq8idH_FWoL7tk2PBP_ae8ibl8D91yfGjgN7Y93gla1I9n3vTAzmF9hjN35DWROWgEtdytNcNBcHcUCmg_RAw1FVx6egET4_H8pU81v6FffBX2jDPEasYVycNOfFqt7OleQQvxQfi4OhczOlY6xW9Y-Cmhg4NdC2uuhhVkWGkHA_dWmDjk9a4oj5xpjiv3lYnCk6GIzzcUb6NpFFIo"
+            image: "/assets/charity/our-expertize-in-action.png"
         },
         {
             year: "Phase 4: Expansion",
             title: "Cross-Border Scaling",
             description: "Expanding our proven humanitarian models across 12 countries in the region.",
             icon: "public",
-            image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBs3vL2n2GmIDwl6YqLA6Gxz6Q6bMAvSrXLwif8Fz7RROk8nexrkg3Oa8KVMDPb2TStg9xMsdWezF0_t6X-cHj_eshbVWGAYirtQoy9wtdz4STbIHMT_qBZ8ATZ6EjGBn6F0dAG01nAZhHG8kmvWQbi1hT9b53UZR6sZ6TVI99xExr3edJCE0NEBQU-t2jTqFChNzBa8QKQXZ2IVAgQ7IIKCbgbsMM-d_TaxzPNRc7CvFLTozI1mVyNZxV4C1EtSWtVHstxKdcPo88"
+            image: "/assets/charity/our-expertize-in-action.png"
         }
     ];
 

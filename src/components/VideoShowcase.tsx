@@ -5,19 +5,19 @@ const videos = [
     {
         title: "Building Futures in Lagos",
         duration: "3:45",
-        thumbnail: "https://lh3.googleusercontent.com/aida-public/AB6AXuDZUyPMKzz97KSXoff8blkwYi-7OlEWfpoD7t_PzsC61jWkhj2aoRMySVto9QQdrpY6f7EYh6a4cqHsnm-o3zeNtfs3uG6QeFsyeH15m5nhO8m8-JntiIrj_aD55jYw7DAz7WRb9J9GXjUNmpAzlZH9UZn5AuWADN73TVPg2IN3yNxHwM3D4orshsXqwqsklVQb4kGch5pjGy6PlBqOeRViKw-YNjbBYm141n0bGV5EL3cj8pQ8y_Tmkk6hX9h7fnXuv9ttgJeFjV4",
+        thumbnail: "/assets/charity/our-expertize-in-action.png",
         category: "Community Impact"
     },
     {
         title: "Teacher Excellence 2024",
         duration: "2:15",
-        thumbnail: "https://lh3.googleusercontent.com/aida-public/AB6AXuA0D42cGvlYkLGdY3Pyp7nz-KaP3VV6UPlGjinq-S7S6a4Arr-3zmJCevxHP7pswwOm0vZC1anWyer2TwCYBDPL0XAN_PcFTFcW2T0W9IKytjETMkyRGl397af6EKKoQMi0zstLUmREEuurpP46enI208yrXJn4br0_ZmSofXYzty42SaLMIZvnlGbIxHiXN4V3v1MKEweoMIp_wZdUcYITheMR8YeuoaTzs707dR1PH7HAyRLzWn6h8Nx53YONQRjpw5qPnEv0jZA",
+        thumbnail: "/assets/charity/our-expertize-in-action.png",
         category: "Foundation Programs"
     },
     {
         title: "Scholarship Journey",
         duration: "5:30",
-        thumbnail: "https://lh3.googleusercontent.com/aida-public/AB6AXuBc1JcXtKDNQV5qEdW6xfvhZCw3J3IQ31IqldJEQyBh2MmkpFrTNH9wC3i5XWZ7Gl1ZeWbztEjm1PphirlSbZbsaKtMNDmQ9FRITrqdKIo7j3e6BC0EsyBM08Tm7dDlL7IMBAjtxrIX5ZOmpfq0RdWQe40cI0CHCNLgAUQuGpnWK0cg5iy_W-kpxXq07OXBrjWF-T7vqc6I4d1gARE7MEbAc63-15U2Ex0aoK1jQri2OxOhwwXNSOHQjCX7WjOXNFvobV1SR2M7-LE",
+        thumbnail: "/assets/charity/our-expertize-in-action.png",
         category: "Success Stories"
     }
 ];

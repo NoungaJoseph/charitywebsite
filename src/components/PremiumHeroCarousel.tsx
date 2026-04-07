@@ -1,35 +1,35 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { School, Award, Users, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
     {
-        image: '/assets/images/carousel-1.png',
+        image: '/assets/charity/school.png',
         tag: 'Education & Opportunity',
         title: 'Empowering Futures Across Cameroon',
         subtitle: 'Transforming Communities',
         description: 'Enako Outreach delivers scholarships, school rehabilitation, and teacher support to rural and urban communities across Cameroon.',
-        icon: <School className="w-6 h-6" />,
+        icon: <img src="/assets/charity/scholarship.png" alt="Scholarships" className="w-6 h-6 object-contain" />,
         cta1: { label: 'Apply for Help', to: '/contact' },
         cta2: { label: 'Learn More', to: '/programs/scholarships' },
     },
     {
-        image: '/assets/images/carousel-2.png',
+        image: '/assets/charity/teacher-rewards.png',
         tag: 'Teacher Excellence',
         title: 'Rewarding Educators Who Change Lives',
         subtitle: 'Teacher Rewards Programme',
         description: 'We recognise and reward outstanding teachers with grants, training, and professional development opportunities throughout Cameroon.',
-        icon: <Award className="w-6 h-6" />,
+        icon: <img src="/assets/charity/teacher-rewards.png" alt="Teacher Rewards" className="w-6 h-6 object-contain" />,
         cta1: { label: 'Nominate a Teacher', to: '/programs/teacher-rewards' },
         cta2: { label: 'Our Programs', to: '/programs' },
     },
     {
-        image: '/assets/images/carousel-3.png',
+        image: '/assets/charity/community-health-support.png',
         tag: 'Community Action',
         title: 'Building Stronger Communities Together',
         subtitle: 'Humanitarian Response',
         description: 'From clean water access to emergency relief, we uplift entire communities through coordinated, sustainable humanitarian programmes.',
-        icon: <Users className="w-6 h-6" />,
+        icon: <img src="/assets/charity/emergency-relief.png" alt="Emergency Relief" className="w-6 h-6 object-contain" />,
         cta1: { label: 'Donate Now', to: '/donate' },
         cta2: { label: 'Report a Need', to: '/contact' },
     },

@@ -7,19 +7,19 @@ const reviews = [
         quote: 'Enako Outreach is doing what governments have failed to do for decades. Their scholarship programme transformed my daughter\'s life and gave our entire family hope. I proud to have been part of this mission.',
         name: 'Mariam Fon',
         title: 'Parent — Bamenda, Cameroon',
-        image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=100&auto=format&fit=crop&q=80',
+        image: '/assets/charity/our-expertize-in-action.png',
     },
     {
         quote: 'The teacher award I received through Enako Outreach was more than a prize — it was recognition that my 15 years of dedication in a rural classroom actually mattered. This organisation sees us.',
         name: 'Emmanuel Nkeng',
         title: 'Primary School Teacher — Buea',
-        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80',
+        image: '/assets/charity/our-expertize-in-action.png',
     },
     {
         quote: 'I came across Enako Outreach while looking for a cause that truly makes a difference. After just one visit to their impact report, I was fully convinced. Transparent, passionate, and deeply impactful.',
         name: 'Claire Mbarga',
         title: 'International Donor & Advocate',
-        image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&auto=format&fit=crop&q=80',
+        image: '/assets/charity/our-expertize-in-action.png',
     },
 ];
 

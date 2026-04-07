@@ -35,7 +35,7 @@ const ImpactPage = () => {
                                 className="w-full h-full"
                             >
                                 <img
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0D42cGvlYkLGdY3Pyp7nz-KaP3VV6UPlGjinq-S7S6a4Arr-3zmJCevxHP7pswwOm0vZC1anWyer2TwCYBDPL0XAN_PcFTFcW2T0W9IKytjETMkyRGl397af6EKKoQMi0zstLUmREEuurpP46enI208yrXJn4br0_ZmSofXYzty42SaLMIZvnlGbIxHiXN4V3v1MKEweoMIp_wZdUcYITheMR8YeuoaTzs707dR1PH7HAyRLzWn6h8Nx53YONQRjpw5qPnEv0jZA"
+                                    src="/assets/charity/our-expertize-in-action.png"
                                     alt="Impact scene"
                                     className="w-full h-full object-cover"
                                 />

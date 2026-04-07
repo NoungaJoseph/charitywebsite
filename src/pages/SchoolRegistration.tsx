@@ -50,7 +50,7 @@ const SchoolRegistrationPage = () => {
                         <div className="lg:w-1/2 min-h-[400px] lg:min-h-full relative w-full">
                             <FadeIn direction="left" className="h-full">
                                 <img
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf36m3k6OIJWgQJnMGVHWXJXz5cQVL1FU4mVwbkZ5l0IJarktCFr78ZR2kFmSnxpLVENEXKCAzIinLHE3H4oJFe6MmOPVzf9Sik8nUO7XFujIqsGExm87DQ6IYXM45-r69fvInAFBKOgXq11jSQyWEiNlqZIPMDGjG3dHfzJG7HiwNHQsD_FdNQRIKQ3jVvAbfG4Nxq-bxOK6GRatjfJbshyF7L44Q1JjqjCiQE5QAIHXRXjhUjQAOa9cE2-vn2LOqAYlDCvPOkE"
+                                    src="/assets/charity/our-expertize-in-action.png"
                                     alt="School students"
                                     className="absolute inset-0 w-full h-full object-cover"
                                 />

@@ -6,22 +6,22 @@ const steps = [
         number: '01',
         title: 'Digital Equity Mission',
         desc: 'We identify remote schools with the greatest digital divide and deploy solar-powered computer labs to close the gap permanently.',
-        illustration: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&auto=format&fit=crop&q=80',
-        illFallback: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZUyPMKzz97KSXoff8blkwYi-7OlEWfpoD7t_PzsC61jWkhj2aoRMySVto9QQdrpY6f7EYh6a4cqHsnm-o3zeNtfs3uG6QeFsyeH15m5nhO8m8-JntiIrj_aD55jYw7DAz7WRb9J9GXjUNmpAzlZH9UZn5AuWADN73TVPg2IN3yNxHwM3D4orshsXqwqsklVQb4kGch5pjGy6PlBqOeRViKw-YNjbBYm141n0bGV5EL3cj8pQ8y_Tmkk6hX9h7fnXuv9ttgJeFjV4',
+        illustration: '/assets/charity/our-expertize-in-action.png',
+        illFallback: '/assets/charity/our-expertize-in-action.png',
     },
     {
         number: '02',
         title: 'Micro‑Grant Engine',
         desc: 'A direct-giving platform connects donors with teachers for targeted classroom supplies and project funding — every franc is tracked.',
-        illustration: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&auto=format&fit=crop&q=80',
-        illFallback: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBcw8wxpYcYBRL5pXLzflekN0ZSeDZgXPZfP8prs4flNveXRQbXpOwb7I_-2nWDe0cBH3uYJrzYMnjbe1ISIDCgp4VNeM_Lr6i7W3Yet-UvfotldMpB9XlfbSq7Y4ral-63I4O9ZEnQAZg-UJ20y79euxrFznquIVxmYyixWzFSli6fYmnGmNs2BUByUTNMzAobC6Ggrnw1wbiXKhv0QuDrVb6_5kH15OME7yobzgFIkZejAP-QF18TbX2UKHqUxcS8qu7-YYwqRI8',
+        illustration: '/assets/charity/our-expertize-in-action.png',
+        illFallback: '/assets/charity/our-expertize-in-action.png',
     },
     {
         number: '03',
         title: 'Vocation Hubs',
         desc: 'School facilities transform into evening vocational centres providing adult literacy, technical skill-building and community empowerment.',
-        illustration: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&auto=format&fit=crop&q=80',
-        illFallback: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA0D42cGvlYkLGdY3Pyp7nz-KaP3VV6UPlGjinq-S7S6a4Arr-3zmJCevxHP7pswwOm0vZC1anWyer2TwCYBDPL0XAN_PcFTFcW2T0W9IKytjETMkyRGl397af6EKKoQMi0zstLUmREEuurpP46enI208yrXJn4br0_ZmSofXYzty42SaLMIZvnlGbIxHiXN4V3v1MKEweoMIp_wZdUcYITheMR8YeuoaTzs707dR1PH7HAyRLzWn6h8Nx53YONQRjpw5qPnEv0jZA',
+        illustration: '/assets/charity/our-expertize-in-action.png',
+        illFallback: '/assets/charity/our-expertize-in-action.png',
     },
 ];
 

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import FadeIn from './FadeIn';
@@ -9,27 +9,35 @@ const stories = [
         name: 'Sarah Akot',
         role: 'Young Entrepreneur, Douala',
         text: 'The business training programme helped me start my own community garden, providing fresh produce for my village and financial independence for my family. Enako Outreach changed everything.',
-        image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=600&auto=format&fit=crop&q=80',
-        fallback: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDj7xaxrAqkCGSimD-YN1QYbpmdouNi4ZI0SgLMrNd5lnYg76qex7A8K98Kv2j4QCKc9AucXl6Lbal4YZDU3RJGNk8UAz5_BIJ4o9gigHpePjDA7T_97lpV50TQP7o_xoXFxfBcuG3avHFyb_7U7yvGwDJ3xUUrji5V2C6pwlzRv82-ZUpULExh35WFRE9gSJKi7H9OSVPi4z4Solk_qdySXOk_lE5aP2lQ0IwsPh3LaA5AmNFuPB-VO5DV2zSIn3mbGKP82IrzQnI',
+        image: '/assets/charity/our-expertize-in-action.png',
+        fallback: '/assets/charity/our-expertize-in-action.png',
     },
     {
         name: 'David Obi',
         role: 'Computer Science Scholar',
         text: 'Thanks to the technology grant, I completed my degree and launched a local tech hub that now trains fifty youth each month. This foundation believed in me before I believed in myself.',
-        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&auto=format&fit=crop&q=80',
-        fallback: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBKWMGcVwFYUe-lACRbwLg0aey91CJPqM5sShYGA6Brmd7AF8A3O3pqIqyqsw6PpZL4bMXokYm7yttOMQvGY7329YvjfhuKxkzc5V2TKdpKMg4dNUqJ6NbjVIcbp2Aq3OTaC8R9qshcngnhqImNqTMkIfRCo5AEEsxzi6vE8xfcTba9Ngm9D46GlrEvP5yhE8_eb3MR6oaAambK6lQ2oofxonzNahHWUbNWxz9CvfXwxZ06k4okzg8ExCUuv4PrzqD1wjYCrgLK2Zc',
+        image: '/assets/charity/our-expertize-in-action.png',
+        fallback: '/assets/charity/our-expertize-in-action.png',
     },
     {
         name: 'Abena Osei',
         role: 'Scholarship Recipient, Yaoundé',
         text: 'Being selected as top student in my district opened doors I only dreamed of. The Enako Outreach scholarship changed my entire family\'s trajectory — it is the reason I am in university today.',
-        image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&auto=format&fit=crop&q=80',
-        fallback: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBf36m3k6OIJWgQJnMGVHWXJXz5cQVL1FU4mVwbkZ5l0IJarktCFr78ZR2kFmSnxpLVENEXKCAzIinLHE3H4oJFe6MmOPVzf9Sik8nUO7XFujIqsGExm87DQ6IYXM45-r69fvInAFBKOgXq11jSQyWEiNlqZIPMDGjG3dHfzJG7HiwNHQsD_FdNQRIKQ3jVvAbfG4Nxq-bxOK6GRatjfJbshyF7L44Q1JjqjCiQE5QAIHXRXjhUjQAOa9cE2-vn2LOqAYlDCvPOkE',
+        image: '/assets/charity/our-expertize-in-action.png',
+        fallback: '/assets/charity/our-expertize-in-action.png',
     },
 ];
 
 const BeneficiaryStories = () => {
     const [current, setCurrent] = useState(0);
+
+    // Auto-rotation every 3 seconds
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrent((c) => (c === stories.length - 1 ? 0 : c + 1));
+        }, 3000);
+        return () => clearInterval(timer);
+    }, []);
 
     const prev = () => setCurrent((c) => (c === 0 ? stories.length - 1 : c - 1));
     const next = () => setCurrent((c) => (c === stories.length - 1 ? 0 : c + 1));
@@ -63,7 +71,7 @@ const BeneficiaryStories = () => {
                             {/* Left — Rounded photo */}
                             <div className="relative">
                                 {/* Rounded rectangle photo with cut corner like reference */}
-                                <div className="w-full max-w-md mx-auto lg:mx-0 rounded-[3rem_3rem_8rem_3rem] overflow-hidden aspect-[4/5]">
+                                <div className="w-full max-w-2xl mx-auto lg:mx-0 rounded-[3rem_3rem_8rem_3rem] overflow-hidden aspect-[4/5]">
                                     <img
                                         src={story.image}
                                         alt={story.name}

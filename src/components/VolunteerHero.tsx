@@ -7,7 +7,7 @@ const VolunteerHero = () => {
                 <img
                     alt="Volunteers working with children in a sunny outdoor setting"
                     className="h-full w-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHX-tXUXPEX30EhjIhb8zrV4ZubNtqLgpYEeiFd2fdt5GAkDWeINvFgVGjHz7JzTMUAFnlPQqdn68cypVhDC63DF1CH5LHVXJwlynv72MSyR4BkF0tGlA3N8HWUfycndCw6rBQj9nK-DhKu5wKlPAQwi8xvFVzDibHHLAit93c1B-YfZfj2EmhNI46OuJgIhPX02FWjOdanT61rM_B-mZjzplmcFt9zuunotn38xYdslboc7edl8EZUM29idUeYNjmMjpYHCDn1U"
+                    src="/assets/charity/our-expertize-in-action.png"
                 />
                 <div className="absolute inset-0 bg-navy " />
                 <div className="absolute inset-0 bg-navy    " />

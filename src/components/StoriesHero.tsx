@@ -7,7 +7,7 @@ const StoriesHero = () => {
                 <img
                     alt="African student studying in a modern library"
                     className="h-full w-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFqT9S4M-N-oFz_Xo_7yF9m_VygUoUrI1Z7IkM_sDz_BR3KBC-Gnc65o12mtb60NNjjsPByYxnYbzgEy1ch2M-pm9scBNvu2Gup85SFJ8pqYdq-6ygE_VrXyswK9MiAzGjck5WqwrId3nm0ScFBKDcebvrW1i-_WfYdceApUE0XRTRRnP8LjTmwZsTivVmLfLssmHH0N0NtOFeoIMoqT4z9_cPOAaiq3keVd9tZBHrgkMYSud-qPHRGnnMcg1-4JgxpRPoeHexmU"
+                    src="/assets/charity/our-expertize-in-action.png"
                 />
                 <div className="absolute inset-0 bg-navy   " />
             </div>

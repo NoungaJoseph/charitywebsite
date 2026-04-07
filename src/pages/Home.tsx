@@ -11,51 +11,36 @@ import CameroonMap from '../components/CameroonMap';
 import FadeIn from '../components/FadeIn';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import {
-    Heart, ArrowRight, AlertCircle, Users, Droplets,
-    GraduationCap, HeartHandshake, MapPin, CheckCircle, Handshake
-} from 'lucide-react';
+import { Heart, ArrowRight, MapPin, CheckCircle } from 'lucide-react';
 
 /* ─── CTA Cards Data ─── */
 const ctaCards = [
     {
-        icon: <GraduationCap className="w-7 h-7" />,
+        image: '/assets/charity/apply-for-help.png',
         title: 'Apply for Help',
         desc: 'Need support for education, healthcare, or emergency assistance? Apply through our programme intake.',
         to: '/contact',
-        color: 'bg-blue-600',
-        lightColor: 'bg-blue-50',
-        textColor: 'text-blue-700',
         label: 'Start Application',
     },
     {
-        icon: <AlertCircle className="w-7 h-7" />,
+        image: '/assets/charity/report-community-issue.png',
         title: 'Report Community Issue',
         desc: 'Know of a community in need of clean water, healthcare, or urgent humanitarian support?',
         to: '/contact',
-        color: 'bg-orange-500',
-        lightColor: 'bg-orange-50',
-        textColor: 'text-orange-700',
         label: 'Report a Case',
     },
     {
-        icon: <Heart className="w-7 h-7" />,
+        image: '/assets/charity/donate-now.png',
         title: 'Donate Now',
         desc: 'Every contribution funds education, clean water, and healthcare for families across Cameroon.',
         to: '/donate',
-        color: 'bg-green-600',
-        lightColor: 'bg-green-50',
-        textColor: 'text-green-700',
         label: 'Donate Today',
     },
     {
-        icon: <Handshake className="w-7 h-7" />,
+        image: '/assets/charity/partner-with-us.png',
         title: 'Partner With Us',
         desc: 'Organisations and individuals can partner with Enako Outreach to amplify our community impact.',
         to: '/partnership',
-        color: 'bg-purple-600',
-        lightColor: 'bg-purple-50',
-        textColor: 'text-purple-700',
         label: 'Start Partnership',
     },
 ];
@@ -67,7 +52,7 @@ const successStories = [
         region: 'North West Region',
         program: 'Single Mothers Assistance',
         quote: 'After losing my husband, I had no income and three children to feed. Enako gave me skills training and startup funds — I now run my own tailoring business and can pay my children\'s school fees.',
-        image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200&q=80',
+        image: '/assets/charity/our-expertize-in-action.png',
         color: 'border-purple-200 bg-purple-50',
         tagColor: 'bg-purple-100 text-purple-700',
     },
@@ -76,7 +61,7 @@ const successStories = [
         region: 'West Region',
         program: 'University Scholarship',
         quote: 'I scored top marks in my BEPC but my family couldn\'t afford university. Enako\'s scholarship paid my entire engineering degree. Today I work at a construction firm in Douala.',
-        image: 'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=200&q=80',
+        image: '/assets/charity/our-expertize-in-action.png',
         color: 'border-blue-200 bg-blue-50',
         tagColor: 'bg-blue-100 text-blue-700',
     },
@@ -85,7 +70,7 @@ const successStories = [
         region: 'Littoral Region',
         program: 'Clean Water Initiative',
         quote: 'Our village women used to walk 4km each morning for water. Since the borehole was installed last year, we have clean water 50 metres from our homes. It has changed everything.',
-        image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80',
+        image: '/assets/charity/our-expertize-in-action.png',
         color: 'border-cyan-200 bg-cyan-50',
         tagColor: 'bg-cyan-100 text-cyan-700',
     },
@@ -93,12 +78,12 @@ const successStories = [
 
 /* ─── Mission points ─── */
 const missionPoints = [
-    { icon: <GraduationCap className="w-5 h-5" />, label: 'Education Access', desc: 'Scholarships from primary to university level' },
-    { icon: <Droplets className="w-5 h-5" />, label: 'Clean Water', desc: 'Boreholes and purification for rural communities' },
-    { icon: <Heart className="w-5 h-5" />, label: 'Healthcare', desc: 'Mobile clinics and community health workers' },
-    { icon: <HeartHandshake className="w-5 h-5" />, label: 'Women Support', desc: 'Empowering single mothers and widows' },
-    { icon: <Users className="w-5 h-5" />, label: 'Youth Empowerment', desc: 'Skills training and entrepreneurship support' },
-    { icon: <AlertCircle className="w-5 h-5" />, label: 'Emergency Relief', desc: 'Rapid response for crisis-affected families' },
+    { icon: '/assets/charity/education-access.png', label: 'Education Access', desc: 'Scholarships from primary to university level' },
+    { icon: '/assets/charity/clean-water.png', label: 'Clean Water', desc: 'Boreholes and purification for rural communities' },
+    { icon: '/assets/charity/healthcare.png', label: 'Healthcare', desc: 'Mobile clinics and community health workers' },
+    { icon: '/assets/charity/woman-support.png', label: 'Women Support', desc: 'Empowering single mothers and widows' },
+    { icon: '/assets/charity/youth-empowerment.png', label: 'Youth Empowerment', desc: 'Skills training and entrepreneurship support' },
+    { icon: '/assets/charity/emergency-relief.png', label: 'Emergency Relief', desc: 'Rapid response for crisis-affected families' },
 ];
 
 const Home = () => {
@@ -141,12 +126,10 @@ const Home = () => {
                                     <div className="grid grid-cols-2 gap-4">
                                         {missionPoints.map((item, i) => (
                                             <motion.div key={i} whileHover={{ y: -3 }}
-                                                className="p-5 rounded-2xl transition-all duration-300">
-                                                <div className="w-10 h-10 rounded-xl bg-green-100 text-green-600 flex items-center justify-center mb-3">
-                                                    {item.icon}
-                                                </div>
-                                                <h4 className="font-bold text-slate-900 text-sm mb-1">{item.label}</h4>
-                                                <p className="text-slate-500 text-xs leading-relaxed">{item.desc}</p>
+                                                className="p-6 transition-all duration-300">
+                                                <img src={item.icon} alt={item.label} className="w-32 h-32 object-contain mb-4" />
+                                                <h4 className="font-black text-slate-900 text-2xl mb-2">{item.label}</h4>
+                                                <p className="text-slate-600 text-base leading-relaxed">{item.desc}</p>
                                             </motion.div>
                                         ))}
                                     </div>
@@ -162,20 +145,24 @@ const Home = () => {
                                 <h2 className="text-slate-900 font-black text-3xl md:text-4xl mb-3">How Can We Help You?</h2>
                                 <p className="text-slate-500 text-lg">Take action — whether you need assistance or want to give it.</p>
                             </FadeIn>
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 {ctaCards.map((card, i) => (
                                     <FadeIn key={card.title} direction="up" delay={i * 0.08}>
                                         <motion.div whileHover={{ y: -5 }} transition={{ duration: 0.3 }}>
-                                            <Link to={card.to} className={`block p-6 rounded-3xl transition-all duration-400 group h-full`}
-                                                style={{ borderColor: 'transparent' }}>
-                                                <div className={`w-14 h-14 rounded-2xl ${card.color} text-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                                                    {card.icon}
+                                            <Link to={card.to} className="relative block group h-[360px] overflow-hidden">
+                                                <img
+                                                    src={card.image}
+                                                    alt={card.title}
+                                                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                                />
+                                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/45 to-transparent" />
+                                                <div className="relative z-10 h-full flex flex-col justify-end p-8">
+                                                    <h3 className="font-black text-3xl text-white mb-2">{card.title}</h3>
+                                                    <p className="text-white/90 text-base leading-relaxed mb-4 max-w-xl">{card.desc}</p>
+                                                    <span className="inline-flex items-center gap-1.5 text-green-300 font-black text-sm uppercase tracking-widest group-hover:gap-3 transition-all">
+                                                        {card.label} <ArrowRight className="w-3.5 h-3.5" />
+                                                    </span>
                                                 </div>
-                                                <h3 className={`font-black text-lg ${card.textColor} mb-2`}>{card.title}</h3>
-                                                <p className="text-slate-600 text-sm leading-relaxed mb-4">{card.desc}</p>
-                                                <span className={`inline-flex items-center gap-1.5 ${card.textColor} font-bold text-xs uppercase tracking-widest group-hover:gap-3 transition-all`}>
-                                                    {card.label} <ArrowRight className="w-3.5 h-3.5" />
-                                                </span>
                                             </Link>
                                         </motion.div>
                                     </FadeIn>
@@ -248,7 +235,7 @@ const Home = () => {
                                             className={`rounded-3xl p-8 transition-all duration-300`}>
                                             <div className="flex items-center gap-4 mb-5">
                                                 <img src={story.image} alt={story.name}
-                                                    className="w-14 h-14 rounded-2xl object-cover" />
+                                                    className="w-20 h-20 object-cover" />
                                                 <div>
                                                     <h4 className="font-black text-slate-900 text-base">{story.name}</h4>
                                                     <div className="flex items-center gap-1 text-slate-500 text-xs">

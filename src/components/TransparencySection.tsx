@@ -11,7 +11,7 @@ const TransparencySection = () => {
                     <FadeIn direction="right">
                         <div className="aspect-video w-full rounded-2xl overflow-hidden relative shadow-xl">
                             <img
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKWMGcVwFYUe-lACRbwLg0aey91CJPqM5sShYGA6Brmd7AF8A3O3pqIqyqsw6PpZL4bMXokYm7yttOMQvGY7329YvjfhuKxkzc5V2TKdpKMg4dNUqJ6NbjVIcbp2Aq3OTaC8R9qshcngnhqImNqTMkIfRCo5AEEsxzi6vE8xfcTba9Ngm9D46GlrEvP5yhE8_eb3MR6oaAambK6lQ2oofxonzNahHWUbNWxz9CvfXwxZ06k4okzg8ExCUuv4PrzqD1wjYCrgLK2Zc"
+                                src="/assets/charity/our-expertize-in-action.png"
                                 alt="Community impact"
                                 className="w-full h-full object-cover"
                             />

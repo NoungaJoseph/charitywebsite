@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { School, Heart, Users, Home, ChevronRight } from 'lucide-react';
+import { Home, ChevronRight } from 'lucide-react';
 import FadeIn from './FadeIn';
 
 const AboutHero = () => {
@@ -10,7 +10,7 @@ const AboutHero = () => {
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-navy/60 z-10" />
                     <img
-                        src="/assets/images/about-hero.png"
+                        src="/assets/charity/our-mission.png"
                         alt="African community education"
                         className="w-full h-full object-cover"
                     />
@@ -71,15 +71,15 @@ const AboutHero = () => {
                 {/* 3 value pillars */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {[
-                        { icon: School, title: 'Education First', desc: 'Providing resources and building classrooms to ensure every child has access to quality learning environments.' },
-                        { icon: Heart, title: 'Health & Wellness', desc: 'Implementing clean water projects and medical outreach programs to improve community well-being.' },
-                        { icon: Users, title: 'Local Partnership', desc: 'Working directly with community leaders to design programs that address specific local needs.' },
+                        { icon: '/assets/charity/education-access.png', title: 'Education First', desc: 'Providing resources and building classrooms to ensure every child has access to quality learning environments.' },
+                        { icon: '/assets/charity/healthcare.png', title: 'Health & Wellness', desc: 'Implementing clean water projects and medical outreach programs to improve community well-being.' },
+                        { icon: '/assets/charity/partner-with-us.png', title: 'Local Partnership', desc: 'Working directly with community leaders to design programs that address specific local needs.' },
                     ].map((item, idx) => (
                         <FadeIn key={item.title} delay={idx * 0.1} direction="up" fullWidth>
                             <div className="bg-white p-10 rounded-[3rem] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)] hover:shadow-[0_50px_120px_-30px_rgba(10,15,44,0.12)] transition-all duration-700 group border-none flex flex-col gap-8 h-full relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full translate-x-1/2 -translate-y-1/2 blur-3xl group-hover:bg-primary/10 transition-colors" />
                                 <div className="w-20 h-20 rounded-2xl bg-slate-50 flex items-center justify-center text-navy group-hover:bg-navy group-hover:text-white transition-all duration-500 shadow-inner">
-                                    <item.icon className="w-10 h-10" />
+                                    <img src={item.icon} alt={item.title} className="w-10 h-10 object-contain" />
                                 </div>
                                 <div className="space-y-4 relative z-10">
                                     <h5 className="text-2xl font-black text-navy tracking-tight ">{item.title}</h5>

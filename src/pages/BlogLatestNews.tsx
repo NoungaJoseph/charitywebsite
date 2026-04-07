@@ -13,7 +13,7 @@ const latestNews = [
         tag: 'New Initiative',
         title: 'Enako Launches Mobile Health Clinic in Bamenda',
         excerpt: 'Our newest mobile clinic has reached over 500 families in the North West region during its first week of operation, providing free medical screenings and medication.',
-        image: 'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&q=80',
+        image: '/assets/charity/our-expertize-in-action.png',
         urgent: true,
     },
     {
@@ -23,7 +23,7 @@ const latestNews = [
         tag: 'Milestone',
         title: '200 Scholarships Awarded for the 2026 Academic Year',
         excerpt: 'Enako Outreach celebrates a landmark milestone as 200 deserving students from across Cameroon receive full tuition funding for the 2025–2026 academic year.',
-        image: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&q=80',
+        image: '/assets/charity/our-expertize-in-action.png',
         urgent: false,
     },
     {
@@ -33,7 +33,7 @@ const latestNews = [
         tag: 'Project Update',
         title: 'Borehole Drilling Completed in 3 Littoral Villages',
         excerpt: 'Three communities in the Littoral region now have access to clean, safe drinking water following the completion of our latest infrastructure project.',
-        image: 'https://images.unsplash.com/photo-1541544537156-7627a7a4aa1c?w=600&q=80',
+        image: '/assets/charity/our-expertize-in-action.png',
         urgent: false,
     },
     {
@@ -43,7 +43,7 @@ const latestNews = [
         tag: 'Alert',
         title: 'Emergency Food Distribution Reaches 1,200 Families in South West',
         excerpt: 'Following a period of acute food insecurity, Enako delivered emergency food packages to 1,200 displaced families across five communities in the South West region.',
-        image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80',
+        image: '/assets/charity/our-expertize-in-action.png',
         urgent: true,
     },
     {
@@ -53,7 +53,7 @@ const latestNews = [
         tag: 'Programme',
         title: "Single Mothers Programme Records 95% Participant Employment Rate",
         excerpt: "Graduates of our single mothers' skills training programme in Bafoussam report a 95% employment or self-employment rate within six months of completing the programme.",
-        image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
+        image: '/assets/charity/our-expertize-in-action.png',
         urgent: false,
     },
     {
@@ -63,7 +63,7 @@ const latestNews = [
         tag: 'Partnership',
         title: 'New Partnership with Ministry of Basic Education Signed',
         excerpt: 'Enako Outreach formalises a strategic partnership with Cameroon\'s Ministry of Basic Education to jointly support school rehabilitation across three regions.',
-        image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=80',
+        image: '/assets/charity/our-expertize-in-action.png',
         urgent: false,
     },
 ];

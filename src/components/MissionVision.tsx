@@ -71,7 +71,7 @@ const MissionVision = () => {
                 <FadeIn direction="up" className="w-full max-w-7xl">
                     <div className="mt-20 w-full aspect-[21/9] rounded-[3rem] overflow-hidden relative group">
                         <img
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc1JcXtKDNQV5qEdW6xfvhZCw3J3IQ31IqldJEQyBh2MmkpFrTNH9wC3i5XWZ7Gl1ZeWbztEjm1PphirlSbZbsaKtMNDmQ9FRITrqdKIo7j3e6BC0EsyBM08Tm7dDlL7IMBAjtxrIX5ZOmpfq0RdWQe40cI0CHCNLgAUQuGpnWK0cg5iy_W-kpxXq07OXBrjWF-T7vqc6I4d1gARE7MEbAc63-15U2Ex0aoK1jQri2OxOhwwXNSOHQjCX7WjOXNFvobV1SR2M7-LE"
+                            src="/assets/charity/our-expertize-in-action.png"
                             alt="African community gathering"
                             className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
                         />

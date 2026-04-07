@@ -95,11 +95,11 @@ const ImpactDashboard: React.FC = () => {
                             {/* Circular image */}
                             <div className="relative z-10 w-[340px] h-[340px] md:w-[420px] md:h-[420px] rounded-full overflow-hidden">
                                 <img
-                                    src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&auto=format&fit=crop&q=80"
+                                    src="/assets/charity/our-expertize-in-action.png"
                                     alt="Cameroonian children in school"
                                     className="w-full h-full object-cover scale-110 hover:scale-100 transition-transform duration-1000"
                                     onError={(e) => {
-                                        (e.target as HTMLImageElement).src = 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZUyPMKzz97KSXoff8blkwYi-7OlEWfpoD7t_PzsC61jWkhj2aoRMySVto9QQdrpY6f7EYh6a4cqHsnm-o3zeNtfs3uG6QeFsyeH15m5nhO8m8-JntiIrj_aD55jYw7DAz7WRb9J9GXjUNmpAzlZH9UZn5AuWADN73TVPg2IN3yNxHwM3D4orshsXqwqsklVQb4kGch5pjGy6PlBqOeRViKw-YNjbBYm141n0bGV5EL3cj8pQ8y_Tmkk6hX9h7fnXuv9ttgJeFjV4';
+                                        (e.target as HTMLImageElement).src = '/assets/charity/our-expertize-in-action.png';
                                     }}
                                 />
                             </div>

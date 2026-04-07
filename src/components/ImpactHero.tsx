@@ -8,7 +8,7 @@ const ImpactHero = () => {
                 <img
                     alt="Modern sustainable school building in a vibrant rural African community"
                     className="h-full w-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnkqhVl5LvBzRi9nv08Ulq9gMYzL0Odp5GXYRPRhZTheb_yvezgzUbmzJEU8nyO_MO1xHjMQAwJebuQ7p0GGFDjFjXNPBlvgPOuO5h8mhr_wWt9ICUwtlO9ORsv1efxzugaVIk2UTjzQPWHAqYBdYJS67ZrgnrN5Um15J-nHID_bGrMtTVs7pNcd999ra3wA4OdJeYrCcjTqjINrvVracpxp3Md33OWJeM2blYFbVbq_AvXZPHPxNxNQUY-_yOPkfiYDWNXIlvz_I"
+                    src="/assets/charity/our-expertize-in-action.png"
                 />
                 <div className="absolute inset-0 bg-navy/60 dark:bg-black/80"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-navy to-transparent"></div>

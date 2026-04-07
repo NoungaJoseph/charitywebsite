@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import FadeIn from './FadeIn';
-import { GraduationCap, Droplets, Award, Heart, HeartHandshake, Zap, ArrowRight, CheckCircle } from 'lucide-react';
+import { ArrowRight, CheckCircle } from 'lucide-react';
 
 const programDetails = [
     {
@@ -8,8 +8,8 @@ const programDetails = [
         badge: 'Education Support',
         title: 'Scholarships for Academic Excellence',
         desc: 'Our flagship scholarship programme provides full-tuition coverage, textbooks, uniforms, and mentorship for high-achieving students from low-income families across Cameroon. We support students from primary level through to university.',
-        image: '/assets/images/scholarship-success.png',
-        icon: <GraduationCap className="w-6 h-6 text-blue-600" />,
+        image: '/assets/charity/scholarship.png',
+        icon: '/assets/charity/scholarship.png',
         highlights: ['Full Tuition Coverage', 'Mentorship Program', 'Primary to University'],
         stats: ['1,200+ Scholars', '97% Graduation', '35+ Schools', '6 Regions'],
         imageCaption: 'Empowering future leaders',
@@ -19,8 +19,8 @@ const programDetails = [
         badge: 'Infrastructure',
         title: 'Clean Water Initiative',
         desc: 'Providing safe, accessible drinking water to rural and water-scarce communities through borehole drilling, water purification systems, and local maintenance training. We believe clean water is the first step to health.',
-        image: 'https://images.unsplash.com/photo-1541544537156-7627a7a4aa1c?w=1000&q=80',
-        icon: <Droplets className="w-6 h-6 text-cyan-600" />,
+        image: '/assets/charity/clean-water-initiative.png',
+        icon: '/assets/charity/clean-water-initiative.png',
         highlights: ['Borehole Drilling', 'Water Purification', 'Maintenance Training'],
         stats: ['18 Boreholes', '28k+ People', '22 Villages', '3 Regions'],
         imageCaption: 'Safe water for every village',
@@ -30,8 +30,8 @@ const programDetails = [
         badge: 'Teacher Excellence',
         title: 'Teacher Rewards Programme',
         desc: 'Recognising and rewarding dedicated educators in underserved communities. We provide financial grants, professional development, and community recognition to those who go above and beyond for their students.',
-        image: '/assets/images/teacher-excellence.png',
-        icon: <Award className="w-6 h-6 text-amber-600" />,
+        image: '/assets/charity/teacher-rewards.png',
+        icon: '/assets/charity/teacher-rewards.png',
         highlights: ['Financial Grants', 'Professional Training', 'Peer Network'],
         stats: ['220+ Teachers', '8 Regions', '3.2k+ Training hrs', '100% Nominated'],
         imageCaption: 'Honouring dedicated educators',
@@ -41,8 +41,8 @@ const programDetails = [
         badge: 'Healthcare',
         title: 'Community Health Support',
         desc: 'Mobile healthcare clinics and medical outreach programs that bring doctors, nurses, and essential medication directly to families in remote and underserved areas of Cameroon.',
-        image: 'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=1000&q=80',
-        icon: <Heart className="w-6 h-6 text-red-600" />,
+        image: '/assets/charity/community-health-support.png',
+        icon: '/assets/charity/community-health-support.png',
         highlights: ['Mobile Clinics', 'Maternal Health', 'Malaria Prevention'],
         stats: ['42k+ Patients', '6 Clinics', '85 Trained', '5 Regions'],
         imageCaption: 'Healthcare within reach',
@@ -52,8 +52,8 @@ const programDetails = [
         badge: 'Social Support',
         title: 'Single Mothers Assistance',
         desc: 'Empowering single mothers and widows through micro-grants, vocational skills training (tailoring, catering, ICT), trauma counselling, and childcare support to foster economic independence.',
-        image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1000&q=80',
-        icon: <HeartHandshake className="w-6 h-6 text-purple-600" />,
+        image: '/assets/charity/single-mothers-assistance.png',
+        icon: '/assets/charity/single-mothers-assistance.png',
         highlights: ['Micro-grants', 'Skills Training', 'Trauma Support'],
         stats: ['480+ Women', '320+ Businesses', '95% Employed', '5 Regions'],
         imageCaption: 'Restoring hope and dignity',
@@ -63,8 +63,8 @@ const programDetails = [
         badge: 'Youth Development',
         title: 'Youth Empowerment Programme',
         desc: 'Building the next generation of Cameroonian changemakers through leadership development, vocational skills training, digital literacy bootcamps, and seed funding for young entrepreneurs.',
-        image: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1000&q=80',
-        icon: <Zap className="w-6 h-6 text-green-600" />,
+        image: '/assets/charity/youth-empowerment.png',
+        icon: '/assets/charity/youth-empowerment.png',
         highlights: ['Leadership Training', 'Digital Skills', 'Seed Funding'],
         stats: ['650+ Youth', '95 Businesses', '73% Employed', '4 Regions'],
         imageCaption: 'Building tomorrow\'s leaders',
@@ -86,10 +86,8 @@ const ProgramsOverview = () => {
                                 <div className="relative rounded-3xl overflow-hidden aspect-[4/3] w-full">
                                     <img src={prog.image} alt={prog.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                     {/* Overlay badge */}
-                                    <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 flex items-center gap-3">
-                                        <div className="w-10 h-10 rounded-xl flex items-center justify-center">
-                                            {prog.icon}
-                                        </div>
+                                    <div className="absolute top-6 left-6 p-1 flex items-center gap-3">
+                                        <img src={prog.icon} alt={`${prog.title} icon`} className="w-12 h-12 object-contain" />
                                         <div>
                                             <p className="text-slate-900 font-black text-sm leading-none">{prog.imageCaption}</p>
                                             <p className="text-green-600 text-[10px] font-bold uppercase tracking-widest mt-1">Enako Impact</p>
