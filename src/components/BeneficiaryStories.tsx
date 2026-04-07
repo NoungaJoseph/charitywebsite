@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import FadeIn from './FadeIn';
@@ -30,14 +30,6 @@ const stories = [
 
 const BeneficiaryStories = () => {
     const [current, setCurrent] = useState(0);
-
-    // Auto-rotation every 3 seconds
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrent((c) => (c === stories.length - 1 ? 0 : c + 1));
-        }, 3000);
-        return () => clearInterval(timer);
-    }, []);
 
     const prev = () => setCurrent((c) => (c === 0 ? stories.length - 1 : c - 1));
     const next = () => setCurrent((c) => (c === stories.length - 1 ? 0 : c + 1));
@@ -71,7 +63,7 @@ const BeneficiaryStories = () => {
                             {/* Left — Rounded photo */}
                             <div className="relative">
                                 {/* Rounded rectangle photo with cut corner like reference */}
-                                <div className="w-full max-w-2xl mx-auto lg:mx-0 rounded-[3rem_3rem_8rem_3rem] overflow-hidden aspect-[4/5]">
+                                <div className="w-full max-w-md mx-auto lg:mx-0 rounded-[3rem_3rem_8rem_3rem] overflow-hidden aspect-[4/5]">
                                     <img
                                         src={story.image}
                                         alt={story.name}

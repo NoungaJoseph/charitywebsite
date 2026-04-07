@@ -5,7 +5,7 @@ const Footer = () => {
     const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
     return (
-        <footer className="bg-slate-900 pt-20 pb-10 overflow-hidden relative">
+        <footer className="bg-slate-900 pt-28 pb-16 overflow-hidden relative" style={{ fontSize: '200%' }}>
             {/* Green top accent */}
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-green-600 via-green-400 to-green-600" />
 
@@ -22,36 +22,29 @@ const Footer = () => {
                         </p>
                         {/* Contact info */}
                         <div className="space-y-3">
-                            <a href="tel:+237600000000" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors text-sm group">
-                                <div className="w-8 h-8 rounded-lg bg-green-600/20 flex items-center justify-center group-hover:bg-green-600 transition-colors">
-                                    <Phone className="w-4 h-4 text-green-400 group-hover:text-white" />
-                                </div>
+                            <a href="tel:+237600000000" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors group">
+                                <img src="/assets/charity/contact us/phone.png" alt="phone" className="w-8 h-8 object-contain" />
                                 +237 600 000 000
                             </a>
-                            <a href="mailto:info@enakooutreach.org" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors text-sm group">
-                                <div className="w-8 h-8 rounded-lg bg-green-600/20 flex items-center justify-center group-hover:bg-green-600 transition-colors">
-                                    <Mail className="w-4 h-4 text-green-400 group-hover:text-white" />
-                                </div>
+                            <a href="mailto:info@enakooutreach.org" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors group">
+                                <img src="/assets/charity/contact us/email.png" alt="email" className="w-8 h-8 object-contain" />
                                 info@enakooutreach.org
                             </a>
-                            <div className="flex items-center gap-3 text-slate-400 text-sm">
-                                <div className="w-8 h-8 rounded-lg bg-green-600/20 flex items-center justify-center">
-                                    <MapPin className="w-4 h-4 text-green-400" />
-                                </div>
+                            <div className="flex items-center gap-3 text-slate-400">
+                                <img src="/assets/charity/contact us/location.png" alt="location" className="w-8 h-8 object-contain" />
                                 Douala, Cameroon — Central Africa
                             </div>
                         </div>
                         {/* Socials */}
                         <div className="flex gap-3">
                             {[
-                                { icon: <Facebook className="w-4 h-4" />, href: '#' },
-                                { icon: <Instagram className="w-4 h-4" />, href: '#' },
-                                { icon: <Twitter className="w-4 h-4" />, href: '#' },
-                                { icon: <Linkedin className="w-4 h-4" />, href: '#' },
-                                { icon: <Youtube className="w-4 h-4" />, href: '#' },
+                                { src: '/assets/charity/social/facebook.png', href: '#' },
+                                { src: '/assets/charity/social/instagram.png', href: '#' },
+                                { src: '/assets/charity/social/twitter.png', href: '#' },
+                                { src: '/assets/charity/social/Youtube.png', href: '#' },
                             ].map((s, i) => (
-                                <a key={i} href={s.href} className="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-green-600 hover:text-white hover:border-green-600 transition-all">
-                                    {s.icon}
+                                <a key={i} href={s.href} className="inline-flex items-center">
+                                    <img src={s.src} alt="social" className="w-8 h-8 object-contain" />
                                 </a>
                             ))}
                         </div>

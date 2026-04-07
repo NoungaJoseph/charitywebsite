@@ -144,7 +144,7 @@ const BlogLatestNews = () => {
                                             </div>
                                             <h2 className="text-2xl font-black text-slate-900 mb-4 group-hover:text-green-700 transition-colors">{post.title}</h2>
                                             <p className="text-slate-500 text-sm leading-relaxed mb-6">{post.excerpt}</p>
-                                            <Link to="/blog/posts" className="inline-flex items-center gap-2 text-green-600 font-bold text-sm hover:gap-4 transition-all">
+                                            <Link to={`/blog/${post.id}`} className="inline-flex items-center gap-2 text-green-600 font-bold text-sm hover:gap-4 transition-all">
                                                 Read Full Story <ArrowRight className="w-4 h-4" />
                                             </Link>
                                         </div>
@@ -160,9 +160,9 @@ const BlogLatestNews = () => {
                             <FadeIn key={post.id} direction="up" delay={i * 0.07}>
                                 <motion.article
                                     whileHover={{ y: -4 }}
-                                    className="group rounded-2xl overflow-hidden transition-all duration-500 flex flex-col h-full"
+                                    className="group transition-all duration-500 flex flex-col h-full"
                                 >
-                                    <div className="relative h-48 overflow-hidden">
+                                    <div className="w-full aspect-square overflow-hidden relative">
                                         <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                         {post.urgent && (
                                             <span className="absolute top-3 left-3 px-2.5 py-1 bg-red-600 text-white text-[10px] font-black rounded-full">URGENT</span>
@@ -171,16 +171,11 @@ const BlogLatestNews = () => {
                                             {post.category}
                                         </span>
                                     </div>
-                                    <div className="p-6 flex flex-col flex-1">
-                                        <div className="flex items-center gap-2 text-xs text-slate-400 mb-3">
-                                            <Tag className="w-3 h-3" />{post.tag}
-                                            <span className="ml-auto flex items-center gap-1"><Calendar className="w-3 h-3" />{post.date}</span>
-                                        </div>
-                                        <h3 className="text-slate-900 font-black text-base leading-tight mb-3 group-hover:text-green-700 transition-colors flex-1">{post.title}</h3>
-                                        <p className="text-slate-500 text-xs leading-relaxed mb-4 line-clamp-2">{post.excerpt}</p>
-                                        <Link to="/blog/posts" className="text-green-600 font-bold text-xs flex items-center gap-1.5 hover:gap-3 transition-all">
-                                            Read More <ArrowRight className="w-3.5 h-3.5" />
-                                        </Link>
+                                    <div className="p-4 flex flex-col flex-1">
+                                        <div className="text-[12px] text-slate-500 mb-2">{post.date} • {post.tag}</div>
+                                        <h3 className="text-slate-900 font-black text-base leading-tight mb-2">
+                                            <Link to={`/blog/${post.id}`} className="underline hover:text-green-700">{post.title}</Link>
+                                        </h3>
                                     </div>
                                 </motion.article>
                             </FadeIn>

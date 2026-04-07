@@ -92,11 +92,10 @@ const navLinks = [
 ];
 
 const socialLinks = [
-    { icon: <Facebook className="w-3.5 h-3.5" />, href: '#', label: 'Facebook' },
-    { icon: <Twitter className="w-3.5 h-3.5" />, href: '#', label: 'Twitter' },
-    { icon: <Instagram className="w-3.5 h-3.5" />, href: '#', label: 'Instagram' },
-    { icon: <Linkedin className="w-3.5 h-3.5" />, href: '#', label: 'LinkedIn' },
-    { icon: <Youtube className="w-3.5 h-3.5" />, href: '#', label: 'YouTube' },
+    { icon: <img src="/assets/charity/social/facebook.png" alt="Facebook" className="w-7 h-7 object-contain" />, href: '#', label: 'Facebook' },
+    { icon: <img src="/assets/charity/social/twitter.png" alt="Twitter" className="w-7 h-7 object-contain" />, href: '#', label: 'Twitter' },
+    { icon: <img src="/assets/charity/social/instagram.png" alt="Instagram" className="w-7 h-7 object-contain" />, href: '#', label: 'Instagram' },
+    { icon: <img src="/assets/charity/social/Youtube.png" alt="YouTube" className="w-7 h-7 object-contain" />, href: '#', label: 'YouTube' },
 ];
 
 const Navbar = () => {
@@ -139,25 +138,24 @@ const Navbar = () => {
                         {/* Left: Contact */}
                         <div className="flex items-center gap-5 text-xs font-medium">
                             <a href="tel:+237600000000" className="flex items-center gap-1.5 hover:text-green-200 transition-colors">
-                                <Phone className="w-3 h-3" />
+                                <img src="/assets/charity/contact us/phone.png" alt="phone" className="w-3 h-3 object-contain" />
                                 <span className="hidden sm:inline">+237 600 000 000</span>
                             </a>
                             <a href="mailto:info@enakooutreach.org" className="flex items-center gap-1.5 hover:text-green-200 transition-colors">
-                                <Mail className="w-3 h-3" />
+                                <img src="/assets/charity/contact us/email.png" alt="email" className="w-3 h-3 object-contain" />
                                 <span className="hidden md:inline">info@enakooutreach.org</span>
                             </a>
                         </div>
 
                         {/* Right: Socials + Language */}
                         <div className="flex items-center gap-3">
-                            <div className="hidden sm:flex items-center gap-2 mr-2 border-r border-white/20 pr-3">
-                                {socialLinks.map((s) => (
-                                    <a key={s.label} href={s.href} aria-label={s.label}
-                                        className="w-6 h-6 flex items-center justify-center rounded hover:bg-white/20 transition-colors">
-                                        {s.icon}
-                                    </a>
-                                ))}
-                            </div>
+                                <div className="hidden sm:flex items-center gap-4 mr-2">
+                                    {socialLinks.map((s) => (
+                                        <a key={s.label} href={s.href} aria-label={s.label} className="inline-flex items-center">
+                                            {s.icon}
+                                        </a>
+                                    ))}
+                                </div>
                             {/* Language Switcher */}
                             <div className="flex items-center gap-0.5 bg-white/10 rounded-full p-0.5">
                                 {(['EN', 'FR'] as const).map((l) => (
@@ -201,11 +199,11 @@ const Navbar = () => {
                                             (link.dropdown && link.dropdown.some(d => d.items.some(i => i.href === location.pathname)))
                                             ? 'text-green-600 bg-green-50'
                                             : isTransparent
-                                                ? 'text-white/90 hover:text-white hover:bg-white/10'
-                                                : 'text-slate-700 hover:text-green-600 hover:bg-green-50'
+                                                    ? 'text-white/90 hover:text-white hover:bg-white/10'
+                                                    : 'text-slate-700 hover:text-green-600 hover:bg-green-50'
                                             }`}
                                     >
-                                        {link.name}
+                                            {link.name}
                                         {link.dropdown && (
                                             <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-300 ${activeDropdown === link.name ? 'rotate-180' : ''}`} />
                                         )}
@@ -366,8 +364,8 @@ const Navbar = () => {
 
                             {/* Contact bar */}
                             <div className="flex items-center gap-4 px-6 py-3 bg-green-50 border-b border-green-100 text-xs text-green-700 font-medium">
-                                <a href="tel:+237600000000" className="flex items-center gap-1.5">
-                                    <Phone className="w-3 h-3" />+237 600 000 000
+                                <a href="tel:+237600000000" className="flex items-center gap-2">
+                                    <img src="/assets/charity/contact us/phone.png" alt="phone" className="w-4 h-4 object-contain" />+237 600 000 000
                                 </a>
                             </div>
 

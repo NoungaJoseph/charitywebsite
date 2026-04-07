@@ -1,54 +1,45 @@
 const ContactForm = () => {
     return (
-        <section className="bg-transparent dark:bg-background-dark py-24 px-6 md:px-12">
-            <div className="max-w-4xl mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                    <div className="space-y-8">
-                        <h2 className="text-navy dark:text-white text-4xl md:text-5xl font-black leading-tight">Send Us a Message</h2>
-                        <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-                            Fill out the form and our team will get back to you within 24 hours. We look forward to hearing from you.
-                        </p>
-                        <div className="space-y-6">
-                            <div className="flex items-center gap-4 text-slate-500 hover:text-primary transition-colors cursor-pointer">
-                                <span className="material-symbols-outlined">description</span>
-                                <span className="font-bold">Download Partnership Guide</span>
-                            </div>
-                            <div className="flex items-center gap-4 text-slate-500 hover:text-primary transition-colors cursor-pointer">
-                                <span className="material-symbols-outlined">help</span>
-                                <span className="font-bold">View Frequently Asked Questions</span>
-                            </div>
+        <section className="bg-transparent dark:bg-background-dark py-12 px-6 md:px-12 mb-40">
+            <div className="max-w-6xl mx-auto">
+                <div className="flex flex-col md:flex-row md:justify-center md:items-center gap-6 md:gap-8">
+                    <div className="flex items-center justify-center md:w-96 md:h-96">
+                        <div className="w-full h-full rounded-xl overflow-hidden">
+                            <img src="/assets/charity/contact us/ccc.png" alt="ccc" className="w-full h-full object-cover" />
                         </div>
                     </div>
 
-                    <form className="space-y-6 p-8 md:p-12 rounded-[2.5rem]">
-                        <div className="space-y-2">
-                            <label className="text-sm font-bold text-navy dark:text-white uppercase tracking-wider pl-1 font-display">Your Name</label>
-                            <input
-                                type="text"
-                                placeholder="FullName"
-                                className="w-full px-6 py-4 rounded-xl bg-white dark:bg-slate-800 border-none focus:ring-2 focus:ring-primary text-navy dark:text-white transition-all"
-                            />
-                        </div>
-                        <div className="space-y-2">
-                            <label className="text-sm font-bold text-navy dark:text-white uppercase tracking-wider pl-1 font-display">Email Address</label>
-                            <input
-                                type="email"
-                                placeholder="hello@company.com"
-                                className="w-full px-6 py-4 rounded-xl bg-white dark:bg-slate-800 border-none focus:ring-2 focus:ring-primary text-navy dark:text-white transition-all"
-                            />
-                        </div>
-                        <div className="space-y-2">
-                            <label className="text-sm font-bold text-navy dark:text-white uppercase tracking-wider pl-1 font-display">Message</label>
-                            <textarea
-                                rows={4}
-                                placeholder="How can we help?"
-                                className="w-full px-6 py-4 rounded-xl bg-white dark:bg-slate-800 border-none focus:ring-2 focus:ring-primary text-navy dark:text-white transition-all resize-none"
-                            ></textarea>
-                        </div>
-                        <button className="w-full py-5 bg-primary text-white font-black rounded-xl text-lg hover:brightness-110 active:scale-95 transition-all">
-                            Send Message
-                        </button>
-                    </form>
+                    <div className="md:w-96 md:h-96 w-full">
+                        <form className="space-y-6 p-6 md:p-8 bg-white dark:bg-slate-800 rounded-none h-full flex flex-col justify-between">
+                            <div className="space-y-2">
+                                <label className="text-sm font-bold text-navy dark:text-white uppercase tracking-wider pl-1 font-display">Your Name</label>
+                                <input
+                                    type="text"
+                                    placeholder="Full Name"
+                                    className="w-full px-6 py-4 rounded-xl bg-white dark:bg-slate-800 border-none focus:ring-2 focus:ring-primary text-navy dark:text-white transition-all"
+                                />
+                            </div>
+                            <div className="space-y-2">
+                                <label className="text-sm font-bold text-navy dark:text-white uppercase tracking-wider pl-1 font-display">Email Address</label>
+                                <input
+                                    type="email"
+                                    placeholder="hello@company.com"
+                                    className="w-full px-6 py-4 rounded-xl bg-white dark:bg-slate-800 border-none focus:ring-2 focus:ring-primary text-navy dark:text-white transition-all"
+                                />
+                            </div>
+                            <div className="space-y-2">
+                                <label className="text-sm font-bold text-navy dark:text-white uppercase tracking-wider pl-1 font-display">Message</label>
+                                <textarea
+                                    rows={6}
+                                    placeholder="How can we help?"
+                                    className="w-full px-6 py-4 rounded-xl bg-white dark:bg-slate-800 border-none focus:ring-2 focus:ring-primary text-navy dark:text-white transition-all resize-none"
+                                ></textarea>
+                            </div>
+                            <button className="w-full py-5 bg-primary text-white font-black rounded-xl text-lg hover:brightness-110 active:scale-95 transition-all">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>

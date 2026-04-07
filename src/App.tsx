@@ -14,6 +14,7 @@ import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import BlogLatestNews from './pages/BlogLatestNews';
 import BlogArchives from './pages/BlogArchives';
+import BlogDetail from './pages/BlogDetail';
 import FocusCommunities from './pages/FocusCommunities';
 import ScrollToTop from './components/ScrollToTop';
 import WhatsAppFloat from './components/WhatsAppFloat';
@@ -42,6 +43,7 @@ function App() {
         {/* Blog routes */}
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/posts" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogDetail />} />
         <Route path="/blog/latest-news" element={<BlogLatestNews />} />
         <Route path="/blog/archives" element={<BlogArchives />} />
         {/* Get Involved alias */}

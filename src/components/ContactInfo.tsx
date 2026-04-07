@@ -1,37 +1,44 @@
 const ContactInfo = () => {
     const infoItems = [
         {
-            icon: "mail",
+            icon: '/assets/charity/contact us/email.png',
             title: "Email Us",
             value: "info@enakooutreach.org",
-            description: "For general inquiries and partnerships"
+            description: "For general inquiries and partnerships",
+            href: "mailto:info@enakooutreach.org"
         },
         {
-            icon: "phone",
+            icon: '/assets/charity/contact us/phone.png',
             title: "Call Us",
             value: "+254 700 000 000",
-            description: "Mon-Fri from 9am to 6pm"
+            description: "Mon-Fri from 9am to 6pm",
+            href: "tel:+254700000000"
         },
         {
-            icon: "location_on",
+            icon: '/assets/charity/contact us/location.png',
             title: "Visit Us",
-            value: "Nairobi, Kenya",
-            description: "123 Impact Plaza, Community Hub"
+            value: "Akwa, Douala, Cameroon",
+            description: "Littoral Region - Main Office",
+            href: "https://maps.google.com/?q=Akwa+Douala+Cameroon"
         }
     ];
 
     return (
-        <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto bg-transparent">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <section className="py-12 px-6 md:px-12 max-w-6xl mx-auto bg-transparent">
+            <div className="flex flex-col md:flex-row gap-6">
                 {infoItems.map((item) => (
-                    <div key={item.title} className="flex flex-col items-center text-center space-y-4 p-8 rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 transition-all hover:shadow-xl group">
-                        <div className="size-16 rounded-2xl bg-white border border-primary text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                            <span className="material-symbols-outlined text-3xl">{item.icon}</span>
-                        </div>
-                        <h3 className="text-2xl font-bold text-navy dark:text-white">{item.title}</h3>
-                        <p className="text-primary font-bold text-lg">{item.value}</p>
-                        <p className="text-slate-500 dark:text-slate-400 font-medium">{item.description}</p>
-                    </div>
+                    <a
+                        key={item.title}
+                        href={item.href}
+                        target={item.title === 'Visit Us' ? '_blank' : undefined}
+                        rel={item.title === 'Visit Us' ? 'noopener noreferrer' : undefined}
+                        className="flex-1 flex flex-col items-start p-2 md:p-4 bg-transparent text-left"
+                    >
+                        <img src={item.icon} alt={item.title} className="w-14 h-14 mb-3 object-contain" />
+                        <h3 className="text-xl font-bold text-navy dark:text-white mb-1">{item.title}</h3>
+                        <p className="text-primary font-extrabold text-base mb-1">{item.value}</p>
+                        <p className="text-slate-500 dark:text-slate-400 font-medium text-sm mb-2">{item.description}</p>
+                    </a>
                 ))}
             </div>
         </section>

@@ -98,34 +98,25 @@ const Blog = () => {
                                     <FadeIn key={post.id} direction="up" delay={i * 0.05} fullWidth>
                                         <motion.article
                                             whileHover={{ y: -4 }}
-                                            className="group rounded-3xl overflow-hidden transition-all duration-500 flex flex-col h-full"
+                                            className="group overflow-hidden transition-all duration-500 flex flex-col h-full"
                                         >
-                                            <div className="relative h-56 overflow-hidden rounded-3xl">
+                                            <div className="w-full aspect-square overflow-hidden">
                                                 <img
                                                     src={post.image}
                                                     alt={post.title}
-                                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                                    className="w-full h-full object-cover transition-transform duration-700"
                                                 />
-                                                <div className="absolute top-4 left-4">
-                                                    <span className="px-3 py-1.5 rounded-xl bg-white/95 backdrop-blur-md text-slate-900 text-[10px] font-black uppercase tracking-widest shadow-md">
-                                                        {post.category}
-                                                    </span>
-                                                </div>
                                             </div>
-                                            <div className="p-7 flex flex-col flex-grow">
-                                                <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-4">
-                                                    <span className="flex items-center gap-1.5"><Calendar className="w-3 h-3 text-green-500" />{post.date}</span>
-                                                    <span className="flex items-center gap-1.5"><User className="w-3 h-3 text-green-500" />{post.author}</span>
+                                            <div className="p-6 flex flex-col flex-grow">
+                                                <div className="mb-3">
+                                                    <span className="text-xs font-black uppercase tracking-widest text-slate-400">{post.category}</span>
                                                 </div>
-                                                <h3 className="text-xl font-black text-slate-900 leading-tight mb-3 group-hover:text-green-700 transition-colors">
-                                                    {post.title}
+                                                <div className="text-[12px] text-slate-500 mb-3">{post.date} • {post.author}</div>
+                                                <h3 className="text-xl font-black text-slate-900 leading-tight mb-3">
+                                                    <Link to={`/blog/${post.id}`} className="underline hover:text-green-700">
+                                                        {post.title}
+                                                    </Link>
                                                 </h3>
-                                                <p className="text-slate-500 text-sm font-medium leading-relaxed mb-6 flex-grow">
-                                                    {post.excerpt}
-                                                </p>
-                                                <Link to={`/blog/${post.id}`} className="inline-flex items-center gap-2 text-green-600 font-bold text-xs uppercase tracking-widest group/link hover:gap-4 transition-all">
-                                                    Read Article <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-                                                </Link>
                                             </div>
                                         </motion.article>
                                     </FadeIn>
