@@ -15,6 +15,7 @@ import Blog from './pages/Blog';
 import BlogLatestNews from './pages/BlogLatestNews';
 import BlogArchives from './pages/BlogArchives';
 import BlogDetail from './pages/BlogDetail';
+import FocusDetail from './pages/FocusDetail';
 import FocusCommunities from './pages/FocusCommunities';
 import ScrollToTop from './components/ScrollToTop';
 import WhatsAppFloat from './components/WhatsAppFloat';
@@ -46,6 +47,7 @@ function App() {
         <Route path="/blog/:id" element={<BlogDetail />} />
         <Route path="/blog/latest-news" element={<BlogLatestNews />} />
         <Route path="/blog/archives" element={<BlogArchives />} />
+        <Route path="/focus-communities/:slug" element={<FocusDetail />} />
         {/* Get Involved alias */}
         <Route path="/get-involved" element={<Volunteer />} />
       </Routes>

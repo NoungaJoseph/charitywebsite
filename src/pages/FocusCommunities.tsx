@@ -83,51 +83,44 @@ const FocusCommunities = () => {
             <Navbar />
 
             {/* ── HERO ── */}
-            <section className="relative pt-40 pb-24 bg-gradient-to-br from-slate-900 via-green-950 to-slate-900 overflow-hidden">
-                <div className="absolute inset-0 opacity-10"
-                    style={{ backgroundImage: 'radial-gradient(circle, #22c55e 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
-                <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
-
+            <section className="relative pt-40 pb-24 overflow-hidden bg-center bg-cover" style={{ backgroundImage: `url('/assets/focus communities/focus community.png')` }}>
+                <div className="absolute inset-0 bg-black/35" />
                 <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
                     <FadeIn direction="up">
-                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 text-xs font-bold uppercase tracking-[0.3em] mb-6">
-                            <MapPin className="w-3.5 h-3.5" /> Cameroon Focus Regions
-                        </span>
-                        <h1 className="text-white text-5xl md:text-7xl font-black leading-[1.0] tracking-tight mb-6 max-w-4xl">
-                            Where We Work
-                            <span className="block text-green-400">Across Cameroon</span>
+                        <h1 className="text-white text-5xl md:text-6xl font-black leading-tight tracking-tight mb-6 text-center">
+                            Focus Communities
                         </h1>
-                        <p className="text-slate-300 text-xl font-medium max-w-2xl leading-relaxed mb-10">
-                            From Douala's coast to the highlands of Bafoussam, Enako Outreach brings targeted humanitarian programs to the communities that need it most.
-                        </p>
-                        <div className="flex flex-wrap gap-4">
-                            <Link to="/donate" className="flex items-center gap-2 bg-green-600 text-white font-bold px-8 py-4 rounded-xl hover:bg-green-700 transition-colors shadow-lg shadow-green-600/30">
-                                <Heart className="w-4 h-4" /> Support a Region
-                            </Link>
-                            <Link to="/contact" className="flex items-center gap-2 bg-white/10 border border-white/20 text-white font-bold px-8 py-4 rounded-xl hover:bg-white/20 transition-colors backdrop-blur-sm">
-                                Partner With Us <ArrowRight className="w-4 h-4" />
-                            </Link>
-                        </div>
                     </FadeIn>
                 </div>
             </section>
 
-            {/* ── KEY STATS ── */}
+            {/* ── KEY INTERVENTIONS (IMAGE + DESCRIPTION STACK) ── */}
             <section className="py-12 bg-white border-b border-slate-100">
-                <div className="max-w-7xl mx-auto px-6 md:px-12">
-                    <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-                        {interventionTypes.map((item) => (
-                            <FadeIn key={item.label} direction="up">
-                                <div className="text-center p-6 rounded-2xl transition-all duration-300 group">
-                                    <div className={`w-14 h-14 rounded-2xl ${item.color} flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform`}>
-                                        {item.icon}
+                <div className="max-w-7xl mx-auto px-6 md:px-12 space-y-8">
+                    {[
+                        { slug: 'clean-water', image: '/assets/focus communities/boreholes drilled.png', title: 'Clean Water Access', count: '18 boreholes drilled', desc: 'We fund, drill, and maintain boreholes and water purification systems in water-scarce communities. Each project includes community training on maintenance and sustainable water management to ensure long-term impact.' },
+                        { slug: 'healthcare', image: '/assets/focus communities/mobile clinics.png', title: 'Healthcare Outreach', count: '14 mobile clinics', desc: 'Mobile clinics, medication supply, and preventive health campaigns reach thousands quarterly. Our teams provide vaccinations, maternal health services, and health education to remote populations.' },
+                        { slug: 'education', image: '/assets/focus communities/scholarships.png', title: 'Education Support', count: '1,200 scholarships', desc: 'Full and partial scholarships for students across primary, secondary, and university levels. We also support school rehabilitation and teacher training to improve learning outcomes.' },
+                        { slug: 'women-mothers', image: '/assets/focus communities/beneficiaries.png', title: 'Women & Mothers', count: '600 beneficiaries', desc: 'Micro-grants, skills training, and childcare assistance for vulnerable women and mothers. Programs combine livelihood support with psychosocial services and peer networks.' },
+                        { slug: 'community-relief', image: '/assets/focus communities/families.png', title: 'Community Relief', count: '8,000 families', desc: 'Rapid-response packages and shelter support for families affected by crises. We coordinate with local actors to distribute food, hygiene kits, and temporary shelter.' },
+                    ].map((item, idx) => (
+                        <FadeIn key={item.slug} direction="up">
+                            <div className="flex flex-col lg:flex-row gap-3 items-stretch lg:h-64">
+                                <div className="w-full lg:w-1/2 flex-shrink-0">
+                                    <div className="w-full h-full overflow-hidden">
+                                        <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
                                     </div>
-                                    <div className="font-black text-slate-900 text-sm mb-0.5">{item.count}</div>
-                                    <div className="text-slate-500 text-xs font-medium">{item.label}</div>
                                 </div>
-                            </FadeIn>
-                        ))}
-                    </div>
+                                <div className="w-full lg:w-1/2 flex-1 flex flex-col justify-center">
+                                    <div className="text-slate-400 text-sm font-semibold mb-2">{item.count}</div>
+                                    <h3 className="text-2xl font-black text-slate-900 mb-3">
+                                        <Link to={`/focus-communities/${item.slug}`} className="underline hover:text-green-600">{item.title}</Link>
+                                    </h3>
+                                    <p className="text-slate-600 leading-relaxed">{item.desc}</p>
+                                </div>
+                            </div>
+                        </FadeIn>
+                    ))}
                 </div>
             </section>
 
